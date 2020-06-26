@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2AADE7B66C4B6B8AB8845500 /* Pods_newTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDCB98AB97C9C46E8905599 /* Pods_newTest.framework */; };
+		BFE2FB1124A5B51000F583C6 /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1024A5B51000F583C6 /* MyCollectionView.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		12C6CF12753C05106C688127 /* Pods-newTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newTest.debug.xcconfig"; path = "Target Support Files/Pods-newTest/Pods-newTest.debug.xcconfig"; sourceTree = "<group>"; };
 		5EDCB98AB97C9C46E8905599 /* Pods_newTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		778A65F14A5A419D870C9D44 /* Pods-newTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newTest.release.xcconfig"; path = "Target Support Files/Pods-newTest/Pods-newTest.release.xcconfig"; sourceTree = "<group>"; };
+		BFE2FB1024A5B51000F583C6 /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* newTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BFE2FB0E24A5B3A700F583C6 /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "瀑布流";
+			sourceTree = "<group>";
+		};
+		BFE2FB0F24A5B43B00F583C6 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB0E24A5B3A700F583C6 /* 瀑布流 */,
+				BFE2FB1024A5B51000F583C6 /* MyCollectionView.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 		BFE838B3249B8A6C0067E6F2 = {
 			isa = PBXGroup;
 			children = (
@@ -184,10 +202,11 @@
 		BFE838FA249B8BA90067E6F2 /* 练习页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE8390F249C66BD0067E6F2 /* UITableView */,
+				BFE2FB0F24A5B43B00F583C6 /* UICollectionView */,
 				BFE83910249C67720067E6F2 /* 生命周期 */,
 				BFE83914249C6AEA0067E6F2 /* 设备信息 */,
 				BFE83913249C6A550067E6F2 /* 导航栏-navigation */,
-				BFE8390F249C66BD0067E6F2 /* UITableView */,
 				BFE838FB249B8BA90067E6F2 /* MySafeAreaInsets.swift */,
 			);
 			path = "练习页面";
@@ -435,6 +454,7 @@
 				BFE83908249BB0480067E6F2 /* ModelTest.swift in Sources */,
 				BFE83906249B8EFF0067E6F2 /* HttpMannager.swift in Sources */,
 				BFE83912249C679B0067E6F2 /* LifeVC.swift in Sources */,
+				BFE2FB1124A5B51000F583C6 /* MyCollectionView.swift in Sources */,
 				BFE83900249B8BA90067E6F2 /* MySafeAreaInsets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

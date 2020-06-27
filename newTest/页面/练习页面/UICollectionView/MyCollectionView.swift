@@ -19,6 +19,7 @@ class MyCollectionView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "经典网格视图"
         //创建布局模式对象
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.minimumInteritemSpacing = 0//item左右间隔
@@ -39,7 +40,7 @@ class MyCollectionView: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         //创建重用cell（集合对象是代码生成的而不是NIB或故事板生成的因此需要注册一个UICollectionCell，否则初始化时会发生错误）
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "ReusedCell")
+        collectionView.register(CustomCVCell.self, forCellWithReuseIdentifier: "CustomCVCell")
         
         //头视图
         collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "kHeaderViewID")
@@ -60,19 +61,9 @@ extension MyCollectionView : UICollectionViewDataSource{
     
     //返回cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let id = "ReusedCell"
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath)
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: cellw, height: cellh))
-        view.backgroundColor = kRGB(Int(arc4random_uniform(256)),Int(arc4random_uniform(256)),Int(arc4random_uniform(256)))
-        cell.addSubview(view)
-        
-        let txt = UILabel()
-        txt.text = "item\(indexPath.row)"
-//        txt.backgroundColor = UIColor.white
-        view.addSubview(txt)
-        txt.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCVCell", for: indexPath) as! CustomCVCell
+        cell.backgroundColor = kRGB(Int(arc4random_uniform(256)),Int(arc4random_uniform(256)),Int(arc4random_uniform(256)))
+        cell.lable?.text = "item\(indexPath.row)"
         return cell
     }
     

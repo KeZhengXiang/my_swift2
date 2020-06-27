@@ -204,5 +204,149 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D41E060F-F24E-4A77-B0BD-5BCB16012911"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/UICollectionView/&#x7011;&#x5e03;&#x6d41;/CustomCViewFlowLayout.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "prepare()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82FAA825-5803-4782-8A83-9B815C76721D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/UICollectionView/&#x7011;&#x5e03;&#x6d41;/CustomCViewFlowLayout.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "collectionViewContentSize"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "82FAA825-5803-4782-8A83-9B815C76721D - bb3ec180a4ac48e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "newTest.CustomCViewFlowLayout.collectionViewContentSize.getter : __C.CGSize"
+                  moduleName = "newTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/one/newTest/newTest/%E9%A1%B5%E9%9D%A2/%E7%BB%83%E4%B9%A0%E9%A1%B5%E9%9D%A2/UICollectionView/%E7%80%91%E5%B8%83%E6%B5%81/CustomCViewFlowLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "937">
+               </Location>
+               <Location
+                  uuid = "82FAA825-5803-4782-8A83-9B815C76721D - bb3ec180a4ac48e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "newTest.CustomCViewFlowLayout.collectionViewContentSize.getter : __C.CGSize"
+                  moduleName = "newTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/one/newTest/newTest/%E9%A1%B5%E9%9D%A2/%E7%BB%83%E4%B9%A0%E9%A1%B5%E9%9D%A2/UICollectionView/%E7%80%91%E5%B8%83%E6%B5%81/CustomCViewFlowLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1134">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7631C24-EB06-464B-B77C-38715E8756E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/&#x52a8;&#x753b;/MyAnimation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
+            landmarkName = "jump7()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D04A7E5-5C38-480A-9F01-4F28A4B76181"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/TestMain.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDE4BBC4-2666-4DAC-B31E-2AAC829744BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/TestMain.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "createUI(name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "114CA6C7-E491-42EA-8E19-182ABF39C53A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/TestMain.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "336F321B-66C9-49D3-99E3-136AB57CD604"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/TestMain.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

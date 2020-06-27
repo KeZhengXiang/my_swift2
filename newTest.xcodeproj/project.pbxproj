@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2AADE7B66C4B6B8AB8845500 /* Pods_newTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDCB98AB97C9C46E8905599 /* Pods_newTest.framework */; };
 		BFE2FB1124A5B51000F583C6 /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1024A5B51000F583C6 /* MyCollectionView.swift */; };
+		BFE2FB1324A5ECED00F583C6 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1224A5ECED00F583C6 /* CustomCollectionView.swift */; };
+		BFE2FB1524A5EDC500F583C6 /* CustomCViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1424A5EDC500F583C6 /* CustomCViewFlowLayout.swift */; };
+		BFE2FB1724A5F7E400F583C6 /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1624A5F7E400F583C6 /* CustomCVCell.swift */; };
+		BFE2FB1A24A70EF000F583C6 /* MyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1924A70EF000F583C6 /* MyAnimation.swift */; };
+		BFE2FB1C24A730A900F583C6 /* TestMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1B24A730A900F583C6 /* TestMain.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -52,6 +57,11 @@
 		5EDCB98AB97C9C46E8905599 /* Pods_newTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		778A65F14A5A419D870C9D44 /* Pods-newTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newTest.release.xcconfig"; path = "Target Support Files/Pods-newTest/Pods-newTest.release.xcconfig"; sourceTree = "<group>"; };
 		BFE2FB1024A5B51000F583C6 /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
+		BFE2FB1224A5ECED00F583C6 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		BFE2FB1424A5EDC500F583C6 /* CustomCViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCViewFlowLayout.swift; sourceTree = "<group>"; };
+		BFE2FB1624A5F7E400F583C6 /* CustomCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
+		BFE2FB1924A70EF000F583C6 /* MyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimation.swift; sourceTree = "<group>"; };
+		BFE2FB1B24A730A900F583C6 /* TestMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMain.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* newTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +133,9 @@
 		BFE2FB0E24A5B3A700F583C6 /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FB1224A5ECED00F583C6 /* CustomCollectionView.swift */,
+				BFE2FB1424A5EDC500F583C6 /* CustomCViewFlowLayout.swift */,
+				BFE2FB1624A5F7E400F583C6 /* CustomCVCell.swift */,
 			);
 			path = "瀑布流";
 			sourceTree = "<group>";
@@ -134,6 +147,14 @@
 				BFE2FB1024A5B51000F583C6 /* MyCollectionView.swift */,
 			);
 			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		BFE2FB1824A70DC700F583C6 /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB1924A70EF000F583C6 /* MyAnimation.swift */,
+			);
+			path = "动画";
 			sourceTree = "<group>";
 		};
 		BFE838B3249B8A6C0067E6F2 = {
@@ -202,6 +223,7 @@
 		BFE838FA249B8BA90067E6F2 /* 练习页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FB1824A70DC700F583C6 /* 动画 */,
 				BFE8390F249C66BD0067E6F2 /* UITableView */,
 				BFE2FB0F24A5B43B00F583C6 /* UICollectionView */,
 				BFE83910249C67720067E6F2 /* 生命周期 */,
@@ -225,6 +247,7 @@
 			children = (
 				BFE838C1249B8A6C0067E6F2 /* ViewController.swift */,
 				BFE838FA249B8BA90067E6F2 /* 练习页面 */,
+				BFE2FB1B24A730A900F583C6 /* TestMain.swift */,
 			);
 			path = "页面";
 			sourceTree = "<group>";
@@ -440,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE2FB1324A5ECED00F583C6 /* CustomCollectionView.swift in Sources */,
 				BFE8391C249F1DE00067E6F2 /* RefreshView.swift in Sources */,
 				BFE838FF249B8BA90067E6F2 /* Common.swift in Sources */,
 				BFE83916249C6CEA0067E6F2 /* NavigationVC.swift in Sources */,
@@ -449,12 +473,16 @@
 				BFE83918249CEB5A0067E6F2 /* Task.swift in Sources */,
 				BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */,
 				BFE838FE249B8BA90067E6F2 /* UIview+.swift in Sources */,
+				BFE2FB1724A5F7E400F583C6 /* CustomCVCell.swift in Sources */,
 				BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */,
 				BFE8391A249DF94E0067E6F2 /* MyTableView.swift in Sources */,
 				BFE83908249BB0480067E6F2 /* ModelTest.swift in Sources */,
+				BFE2FB1A24A70EF000F583C6 /* MyAnimation.swift in Sources */,
 				BFE83906249B8EFF0067E6F2 /* HttpMannager.swift in Sources */,
 				BFE83912249C679B0067E6F2 /* LifeVC.swift in Sources */,
+				BFE2FB1524A5EDC500F583C6 /* CustomCViewFlowLayout.swift in Sources */,
 				BFE2FB1124A5B51000F583C6 /* MyCollectionView.swift in Sources */,
+				BFE2FB1C24A730A900F583C6 /* TestMain.swift in Sources */,
 				BFE83900249B8BA90067E6F2 /* MySafeAreaInsets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

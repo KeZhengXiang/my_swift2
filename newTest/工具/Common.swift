@@ -102,3 +102,14 @@ func getRandom(){
     // let min: UInt32 = 5
     // arc4random_uniform(max - min) + min
 }
+
+
+//跳转到另一个视图
+//func jump(){
+//    print("点击按钮，开始跳转！")
+//    let anotherVC = MyAnimation()
+//    //1
+////    present(anotherVC, animated: true, completion: nil)
+//    //2
+//    self.navigationController?.pushViewController(anotherVC, animated: true)
+//}

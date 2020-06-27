@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         //创建返回按钮
         let button:UIButton = UIButton(type: .system)
         button.frame = CGRect(x: 10, y: 150, width: 200, height: 30)
-        button.setTitle("进入安全区域测试页面", for: .normal)
+        button.center = view.center
+        button.setTitle("进入测试页面", for: .normal)
+        button.backgroundColor = UIColor.green
         button.addTarget(self,action:#selector(jump),for:.touchUpInside)
         self.view.addSubview(button);
         
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
     //跳转到另一个视图
     @objc func jump(){
         print("点击按钮，开始跳转！")
-        let anotherVC = MyAnimation()
+        let anotherVC = TestMain()
         //1
 //        present(anotherVC, animated: true, completion: nil)
         //2

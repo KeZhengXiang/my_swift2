@@ -268,7 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				BFE83910249C67720067E6F2 /* 生命周期 */,
-				BFE83914249C6AEA0067E6F2 /* 设备信息 */,
+				BFE83914249C6AEA0067E6F2 /* 设备信息-监听设备 */,
 				BFE2FB3524A9A59500F583C6 /* 安全区域 */,
 				BFE83913249C6A550067E6F2 /* 导航栏-navigation */,
 				BFE2FB3824A9A5B300F583C6 /* MyScrollView */,
@@ -324,12 +324,12 @@
 			path = "导航栏-navigation";
 			sourceTree = "<group>";
 		};
-		BFE83914249C6AEA0067E6F2 /* 设备信息 */ = {
+		BFE83914249C6AEA0067E6F2 /* 设备信息-监听设备 */ = {
 			isa = PBXGroup;
 			children = (
 				BFE838FC249B8BA90067E6F2 /* MyDevice.swift */,
 			);
-			path = "设备信息";
+			path = "设备信息-监听设备";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

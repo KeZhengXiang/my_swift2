@@ -13,7 +13,7 @@ import SnapKit
 class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
 //    var lists :Array<UIViewController> = []
     let listNames :Array<String> = [
-        "设备信息 MyDevice",
+        "设备信息 监听设备 MyDevice",
         "生命周期 LifeVC",
         "安全区域-刘海屏 MySafeAreaInsets",
         "导航栏 NavigationVC",

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.title = "首页"
+        printViewParam()
         
         //创建返回按钮
         let button:UIButton = UIButton(type: .system)
@@ -49,4 +50,13 @@ class ViewController: UIViewController {
     
     
 
+    func printViewParam(){
+        print("全屏宽高 (kScreenW,kScreenH):（\(kScreenW)，\(kScreenH)）")
+        print("导航条高度 kNavigationBarHeight: \(kNavigationBarHeight)")
+        print("状态栏高度 kStatusBarHeight: \(kStatusBarHeight)")
+        print("TabBar高度 kTabBarHeight: \(kTabBarHeight)")
+        print("底部安全高度 kBottomSafeHeight:  \(kBottomSafeHeight)")
+        
+        print("安全区域 kSafeAreaInsets:  \(kSafeAreaInsets!)")
+    }
 }

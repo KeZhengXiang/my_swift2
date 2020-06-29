@@ -49,7 +49,7 @@ var kSafeAreaInsets :UIEdgeInsets? = {
     if #available(iOS 11, *) {
         if let w = UIApplication.shared.delegate?.window,
             let unwrapedWindow = w {
-            print(unwrapedWindow.safeAreaInsets)
+//            print(unwrapedWindow.safeAreaInsets)
             //刘海屏：
             //竖屏：UIEdgeInsets(top: 44.0, left: 0.0, bottom: 34.0, right: 0.0)
             //横屏：UIEdgeInsets(top: 0.0, left: 44.0, bottom: 21.0, right: 44.0)

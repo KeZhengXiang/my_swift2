@@ -77,7 +77,6 @@ class MyTableView : UIViewController, UITableViewDelegate, UITableViewDataSource
             //print(jsonData["data"])
             if let object = ModelTest.deserialize(from: jsonData["data"].rawString()) {
                 self?.model = object;
-                
                 self?.tableview.reloadData();
                 self?.tableview.mj_header?.endRefreshing()
             }
@@ -105,6 +104,7 @@ class MyTableView : UIViewController, UITableViewDelegate, UITableViewDataSource
                 self?.model!.list.append(contentsOf: object.list)
                 self?.tableview.reloadData()
                 self?.tableview.mj_footer?.endRefreshing()
+                self?.tableview.mj_footer?.endRefreshingWithNoMoreData()
             }
         }) {[weak self] (code) in
             self?.tableview.mj_footer?.endRefreshing()

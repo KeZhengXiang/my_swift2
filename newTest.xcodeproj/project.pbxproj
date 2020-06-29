@@ -14,6 +14,9 @@
 		BFE2FB1724A5F7E400F583C6 /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1624A5F7E400F583C6 /* CustomCVCell.swift */; };
 		BFE2FB1A24A70EF000F583C6 /* MyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1924A70EF000F583C6 /* MyAnimation.swift */; };
 		BFE2FB1C24A730A900F583C6 /* TestMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1B24A730A900F583C6 /* TestMain.swift */; };
+		BFE2FB3724A9A59500F583C6 /* MySafeAreaInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB3624A9A59500F583C6 /* MySafeAreaInsets.swift */; };
+		BFE2FB3B24A9A5B300F583C6 /* MyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB3924A9A5B300F583C6 /* MyScrollView.swift */; };
+		BFE2FB3F24A9A5C500F583C6 /* MySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB3E24A9A5C500F583C6 /* MySearch.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -21,9 +24,7 @@
 		BFE838CA249B8A6D0067E6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C8249B8A6D0067E6F2 /* LaunchScreen.storyboard */; };
 		BFE838FE249B8BA90067E6F2 /* UIview+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838F6249B8BA90067E6F2 /* UIview+.swift */; };
 		BFE838FF249B8BA90067E6F2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838F9249B8BA90067E6F2 /* Common.swift */; };
-		BFE83900249B8BA90067E6F2 /* MySafeAreaInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838FB249B8BA90067E6F2 /* MySafeAreaInsets.swift */; };
 		BFE83901249B8BA90067E6F2 /* MyDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838FC249B8BA90067E6F2 /* MyDevice.swift */; };
-		BFE83902249B8BA90067E6F2 /* MyDevice.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE838FD249B8BA90067E6F2 /* MyDevice.xib */; };
 		BFE83904249B8E150067E6F2 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83903249B8E150067E6F2 /* String+.swift */; };
 		BFE83906249B8EFF0067E6F2 /* HttpMannager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83905249B8EFF0067E6F2 /* HttpMannager.swift */; };
 		BFE83908249BB0480067E6F2 /* ModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83907249BB0480067E6F2 /* ModelTest.swift */; };
@@ -62,6 +63,11 @@
 		BFE2FB1624A5F7E400F583C6 /* CustomCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
 		BFE2FB1924A70EF000F583C6 /* MyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimation.swift; sourceTree = "<group>"; };
 		BFE2FB1B24A730A900F583C6 /* TestMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMain.swift; sourceTree = "<group>"; };
+		BFE2FB3324A9A55F00F583C6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		BFE2FB3424A9A56000F583C6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BFE2FB3624A9A59500F583C6 /* MySafeAreaInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySafeAreaInsets.swift; sourceTree = "<group>"; };
+		BFE2FB3924A9A5B300F583C6 /* MyScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScrollView.swift; sourceTree = "<group>"; };
+		BFE2FB3E24A9A5C500F583C6 /* MySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySearch.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* newTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,9 +79,7 @@
 		BFE838DB249B8A6E0067E6F2 /* newTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838F6249B8BA90067E6F2 /* UIview+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+.swift"; sourceTree = "<group>"; };
 		BFE838F9249B8BA90067E6F2 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		BFE838FB249B8BA90067E6F2 /* MySafeAreaInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySafeAreaInsets.swift; sourceTree = "<group>"; };
 		BFE838FC249B8BA90067E6F2 /* MyDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDevice.swift; sourceTree = "<group>"; };
-		BFE838FD249B8BA90067E6F2 /* MyDevice.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDevice.xib; sourceTree = "<group>"; };
 		BFE83903249B8E150067E6F2 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		BFE83905249B8EFF0067E6F2 /* HttpMannager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMannager.swift; sourceTree = "<group>"; };
 		BFE83907249BB0480067E6F2 /* ModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTest.swift; sourceTree = "<group>"; };
@@ -157,6 +161,46 @@
 			path = "动画";
 			sourceTree = "<group>";
 		};
+		BFE2FB3524A9A59500F583C6 /* 安全区域 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB3624A9A59500F583C6 /* MySafeAreaInsets.swift */,
+			);
+			path = "安全区域";
+			sourceTree = "<group>";
+		};
+		BFE2FB3824A9A5B300F583C6 /* MyScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB3924A9A5B300F583C6 /* MyScrollView.swift */,
+				BFE2FB3A24A9A5B300F583C6 /* Up */,
+			);
+			path = MyScrollView;
+			sourceTree = "<group>";
+		};
+		BFE2FB3A24A9A5B300F583C6 /* Up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Up;
+			sourceTree = "<group>";
+		};
+		BFE2FB3C24A9A5C500F583C6 /* 搜索🔍输入框 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB3D24A9A5C500F583C6 /* Up-进阶使用  搜索嵌入导航栏 */,
+				BFE2FB3E24A9A5C500F583C6 /* MySearch.swift */,
+			);
+			path = "搜索🔍输入框";
+			sourceTree = "<group>";
+		};
+		BFE2FB3D24A9A5C500F583C6 /* Up-进阶使用  搜索嵌入导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Up-进阶使用  搜索嵌入导航栏";
+			sourceTree = "<group>";
+		};
 		BFE838B3249B8A6C0067E6F2 = {
 			isa = PBXGroup;
 			children = (
@@ -223,13 +267,15 @@
 		BFE838FA249B8BA90067E6F2 /* 练习页面 */ = {
 			isa = PBXGroup;
 			children = (
-				BFE2FB1824A70DC700F583C6 /* 动画 */,
-				BFE8390F249C66BD0067E6F2 /* UITableView */,
-				BFE2FB0F24A5B43B00F583C6 /* UICollectionView */,
 				BFE83910249C67720067E6F2 /* 生命周期 */,
 				BFE83914249C6AEA0067E6F2 /* 设备信息 */,
+				BFE2FB3524A9A59500F583C6 /* 安全区域 */,
 				BFE83913249C6A550067E6F2 /* 导航栏-navigation */,
-				BFE838FB249B8BA90067E6F2 /* MySafeAreaInsets.swift */,
+				BFE2FB3824A9A5B300F583C6 /* MyScrollView */,
+				BFE8390F249C66BD0067E6F2 /* UITableView */,
+				BFE2FB0F24A5B43B00F583C6 /* UICollectionView */,
+				BFE2FB1824A70DC700F583C6 /* 动画 */,
+				BFE2FB3C24A9A5C500F583C6 /* 搜索🔍输入框 */,
 			);
 			path = "练习页面";
 			sourceTree = "<group>";
@@ -246,8 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				BFE838C1249B8A6C0067E6F2 /* ViewController.swift */,
-				BFE838FA249B8BA90067E6F2 /* 练习页面 */,
 				BFE2FB1B24A730A900F583C6 /* TestMain.swift */,
+				BFE838FA249B8BA90067E6F2 /* 练习页面 */,
 			);
 			path = "页面";
 			sourceTree = "<group>";
@@ -282,7 +328,6 @@
 			isa = PBXGroup;
 			children = (
 				BFE838FC249B8BA90067E6F2 /* MyDevice.swift */,
-				BFE838FD249B8BA90067E6F2 /* MyDevice.xib */,
 			);
 			path = "设备信息";
 			sourceTree = "<group>";
@@ -375,6 +420,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BFE838B3249B8A6C0067E6F2;
 			productRefGroup = BFE838BD249B8A6C0067E6F2 /* Products */;
@@ -396,7 +442,6 @@
 				BFE838CA249B8A6D0067E6F2 /* LaunchScreen.storyboard in Resources */,
 				BFE838C7249B8A6D0067E6F2 /* Assets.xcassets in Resources */,
 				BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */,
-				BFE83902249B8BA90067E6F2 /* MyDevice.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE2FB1324A5ECED00F583C6 /* CustomCollectionView.swift in Sources */,
+				BFE2FB3724A9A59500F583C6 /* MySafeAreaInsets.swift in Sources */,
 				BFE8391C249F1DE00067E6F2 /* RefreshView.swift in Sources */,
 				BFE838FF249B8BA90067E6F2 /* Common.swift in Sources */,
 				BFE83916249C6CEA0067E6F2 /* NavigationVC.swift in Sources */,
@@ -477,13 +523,14 @@
 				BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */,
 				BFE8391A249DF94E0067E6F2 /* MyTableView.swift in Sources */,
 				BFE83908249BB0480067E6F2 /* ModelTest.swift in Sources */,
+				BFE2FB3B24A9A5B300F583C6 /* MyScrollView.swift in Sources */,
 				BFE2FB1A24A70EF000F583C6 /* MyAnimation.swift in Sources */,
 				BFE83906249B8EFF0067E6F2 /* HttpMannager.swift in Sources */,
 				BFE83912249C679B0067E6F2 /* LifeVC.swift in Sources */,
+				BFE2FB3F24A9A5C500F583C6 /* MySearch.swift in Sources */,
 				BFE2FB1524A5EDC500F583C6 /* CustomCViewFlowLayout.swift in Sources */,
 				BFE2FB1124A5B51000F583C6 /* MyCollectionView.swift in Sources */,
 				BFE2FB1C24A730A900F583C6 /* TestMain.swift in Sources */,
-				BFE83900249B8BA90067E6F2 /* MySafeAreaInsets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +568,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BFE838C4249B8A6C0067E6F2 /* Base */,
+				BFE2FB3324A9A55F00F583C6 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -529,6 +577,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BFE838C9249B8A6D0067E6F2 /* Base */,
+				BFE2FB3424A9A56000F583C6 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -540,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -601,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

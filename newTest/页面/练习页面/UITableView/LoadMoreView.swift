@@ -15,7 +15,18 @@ class LoadMoreView: MJRefreshAutoFooter {
     var stateLabel: UILabel?
     
     override var state: MJRefreshState {
+        /*/** 普通闲置状态 */
+        MJRefreshStateIdle = 1,
+        /** 松开就可以进行刷新的状态 */
+        MJRefreshStatePulling,
+        /** 正在刷新中的状态 */
+        MJRefreshStateRefreshing,
+        /** 即将刷新的状态 */
+        MJRefreshStateWillRefresh,
+        /** 所有数据加载完毕，没有更多的数据了 */
+        MJRefreshStateNoMoreData*/
         didSet {
+            print(state)
             switch state {
             case .idle:
                 self.stateLabel?.text = nil
@@ -53,5 +64,7 @@ class LoadMoreView: MJRefreshAutoFooter {
         self.loadingView?.center = CGPoint(x: self.mj_w / 2, y: self.mj_h / 2)
         self.stateLabel?.center = CGPoint(x: self.mj_w / 2, y: self.mj_h / 2)
     }
+    
+    
     
 }

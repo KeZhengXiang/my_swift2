@@ -9,6 +9,7 @@ import UIKit
 
 class MyDevice: UIViewController {
     
+    
     var deviceInfo: [String]!
     
     @IBOutlet weak var name: UILabel!
@@ -45,13 +46,13 @@ class MyDevice: UIViewController {
         
         let device = UIDevice.current
         //监听通知前判断是否在生成设备方向通知了
-        if !UIDevice.current.isGeneratingDeviceOrientationNotifications{
-            UIDevice.current.beginGeneratingDeviceOrientationNotifications()//开启监听设备方向
-        }
-        // 启用电池监控,启用之后有关电池的监测才可以用
-        device.isBatteryMonitoringEnabled = true
-        // 启用用户接近
-        device.isProximityMonitoringEnabled = true
+//        if !UIDevice.current.isGeneratingDeviceOrientationNotifications{
+//            UIDevice.current.beginGeneratingDeviceOrientationNotifications()//开启监听设备方向
+//        }
+//        // 启用电池监控,启用之后有关电池的监测才可以用
+//        device.isBatteryMonitoringEnabled = true
+//        // 启用用户接近
+//        device.isProximityMonitoringEnabled = true
         print("设备名：" + device.name)
         print("设备型号：" + device.model)
         print("设备定位型号：" + device.localizedModel)
@@ -94,14 +95,14 @@ class MyDevice: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // 监听设备方向变化UIDeviceOrientationDidChange
-        NotificationCenter.default.addObserver(self, selector: #selector(change), name: UIDevice.orientationDidChangeNotification, object: nil)
-        // 监听电池状态 UIDeviceBatteryStateDidChange
-        NotificationCenter.default.addObserver(self, selector: #selector(battery), name: UIDevice.batteryStateDidChangeNotification, object: nil)
-        // 监听电量 UIDeviceBatteryLevelDidChange
-        NotificationCenter.default.addObserver(self, selector: #selector(batteryLevels), name: UIDevice.batteryLevelDidChangeNotification, object: nil)
-        // 监听设备是否接近用户 UIDeviceProximityStateDidChange
-        NotificationCenter.default.addObserver(self, selector: #selector(proximityStates), name: UIDevice.proximityStateDidChangeNotification, object: nil)
+//        // 监听设备方向变化UIDeviceOrientationDidChange
+//        NotificationCenter.default.addObserver(self, selector: #selector(change), name: UIDevice.orientationDidChangeNotification, object: nil)
+//        // 监听电池状态 UIDeviceBatteryStateDidChange
+//        NotificationCenter.default.addObserver(self, selector: #selector(battery), name: UIDevice.batteryStateDidChangeNotification, object: nil)
+//        // 监听电量 UIDeviceBatteryLevelDidChange
+//        NotificationCenter.default.addObserver(self, selector: #selector(batteryLevels), name: UIDevice.batteryLevelDidChangeNotification, object: nil)
+//        // 监听设备是否接近用户 UIDeviceProximityStateDidChange
+//        NotificationCenter.default.addObserver(self, selector: #selector(proximityStates), name: UIDevice.proximityStateDidChangeNotification, object: nil)
         
     }
     

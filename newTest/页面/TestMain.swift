@@ -20,7 +20,9 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         "列表 MyTableView",
         "网格 MyCollectionView",
         "网格-瀑布流 CustomCollectionView",
-        "动画 MyAnimation"]
+        "动画 MyAnimation",
+        "滑动容器 MyScrollView",
+        "搜索 MySearch"]
     
     var tableview :UITableView!
     
@@ -34,6 +36,8 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 5: return MyCollectionView()
         case 6: return CustomCollectionView()
         case 7: return MyAnimation()
+        case 8: return MyScrollView()
+        case 9: return MySearch()
         default:
             return UIViewController()
         }

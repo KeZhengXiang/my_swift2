@@ -82,8 +82,6 @@ class MySearch: UIViewController {
         title = "搜索  文本输入框"
         view.backgroundColor = UIColor.black
         
-        self.navigationController?.isNavigationBarHidden = true
-        
         //
         view.addSubview(searchBar)
         view.addSubview(tabView)
@@ -94,13 +92,23 @@ class MySearch: UIViewController {
         updateTable()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidDisappear (_ animated: Bool) {
         super.viewDidDisappear(animated)
         
         //存储数据到DB
         updateDB()
         
-        self.navigationController?.isNavigationBarHidden = false
     }
     
     func updateTable(){

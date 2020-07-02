@@ -17,6 +17,13 @@
 		BFE2FB3724A9A59500F583C6 /* MySafeAreaInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB3624A9A59500F583C6 /* MySafeAreaInsets.swift */; };
 		BFE2FB3B24A9A5B300F583C6 /* MyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB3924A9A5B300F583C6 /* MyScrollView.swift */; };
 		BFE2FB3F24A9A5C500F583C6 /* MySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB3E24A9A5C500F583C6 /* MySearch.swift */; };
+		BFE2FB4224A9B2C400F583C6 /* MyDBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB4124A9B2C400F583C6 /* MyDBVC.swift */; };
+		BFE2FB4424A9DBAA00F583C6 /* PathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB4324A9DBAA00F583C6 /* PathManager.swift */; };
+		BFE2FB4724A9F90C00F583C6 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB4624A9F90C00F583C6 /* DBManager.swift */; };
+		BFE2FB5324AB33CF00F583C6 /* DBSQCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB5224AB33CF00F583C6 /* DBSQCode.swift */; };
+		BFE2FB5924AB761300F583C6 /* DBSHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB5724AB761300F583C6 /* DBSHHelper.swift */; };
+		BFE2FB5A24AB761300F583C6 /* DBSHProtocl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB5824AB761300F583C6 /* DBSHProtocl.swift */; };
+		BFE2FB5D24AC97ED00F583C6 /* MyGestrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB5C24AC97ED00F583C6 /* MyGestrue.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -68,6 +75,13 @@
 		BFE2FB3624A9A59500F583C6 /* MySafeAreaInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySafeAreaInsets.swift; sourceTree = "<group>"; };
 		BFE2FB3924A9A5B300F583C6 /* MyScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScrollView.swift; sourceTree = "<group>"; };
 		BFE2FB3E24A9A5C500F583C6 /* MySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySearch.swift; sourceTree = "<group>"; };
+		BFE2FB4124A9B2C400F583C6 /* MyDBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDBVC.swift; sourceTree = "<group>"; };
+		BFE2FB4324A9DBAA00F583C6 /* PathManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathManager.swift; sourceTree = "<group>"; };
+		BFE2FB4624A9F90C00F583C6 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		BFE2FB5224AB33CF00F583C6 /* DBSQCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSQCode.swift; sourceTree = "<group>"; };
+		BFE2FB5724AB761300F583C6 /* DBSHHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSHHelper.swift; sourceTree = "<group>"; };
+		BFE2FB5824AB761300F583C6 /* DBSHProtocl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSHProtocl.swift; sourceTree = "<group>"; };
+		BFE2FB5C24AC97ED00F583C6 /* MyGestrue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGestrue.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* newTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +215,50 @@
 			path = "Up-进阶使用  搜索嵌入导航栏";
 			sourceTree = "<group>";
 		};
+		BFE2FB4024A9B29800F583C6 /* 数据库 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB4124A9B2C400F583C6 /* MyDBVC.swift */,
+				BFE2FB4C24A9FB5A00F583C6 /* DB */,
+			);
+			path = "数据库";
+			sourceTree = "<group>";
+		};
+		BFE2FB4524A9E3FD00F583C6 /* 沙盒路径 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB4324A9DBAA00F583C6 /* PathManager.swift */,
+			);
+			path = "沙盒路径";
+			sourceTree = "<group>";
+		};
+		BFE2FB4C24A9FB5A00F583C6 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB5624AB761300F583C6 /* SearchHistory */,
+				BFE2FB5224AB33CF00F583C6 /* DBSQCode.swift */,
+				BFE2FB4624A9F90C00F583C6 /* DBManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		BFE2FB5624AB761300F583C6 /* SearchHistory */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB5724AB761300F583C6 /* DBSHHelper.swift */,
+				BFE2FB5824AB761300F583C6 /* DBSHProtocl.swift */,
+			);
+			path = SearchHistory;
+			sourceTree = "<group>";
+		};
+		BFE2FB5B24AC976300F583C6 /* 七种手势 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB5C24AC97ED00F583C6 /* MyGestrue.swift */,
+			);
+			path = "七种手势";
+			sourceTree = "<group>";
+		};
 		BFE838B3249B8A6C0067E6F2 = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +325,9 @@
 		BFE838FA249B8BA90067E6F2 /* 练习页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FB5B24AC976300F583C6 /* 七种手势 */,
+				BFE2FB4524A9E3FD00F583C6 /* 沙盒路径 */,
+				BFE2FB4024A9B29800F583C6 /* 数据库 */,
 				BFE83910249C67720067E6F2 /* 生命周期 */,
 				BFE83914249C6AEA0067E6F2 /* 设备信息-监听设备 */,
 				BFE2FB3524A9A59500F583C6 /* 安全区域 */,
@@ -512,13 +573,19 @@
 				BFE2FB3724A9A59500F583C6 /* MySafeAreaInsets.swift in Sources */,
 				BFE8391C249F1DE00067E6F2 /* RefreshView.swift in Sources */,
 				BFE838FF249B8BA90067E6F2 /* Common.swift in Sources */,
+				BFE2FB5924AB761300F583C6 /* DBSHHelper.swift in Sources */,
 				BFE83916249C6CEA0067E6F2 /* NavigationVC.swift in Sources */,
 				BFE8391E249F1DEF0067E6F2 /* LoadMoreView.swift in Sources */,
+				BFE2FB4224A9B2C400F583C6 /* MyDBVC.swift in Sources */,
 				BFE83904249B8E150067E6F2 /* String+.swift in Sources */,
 				BFE83901249B8BA90067E6F2 /* MyDevice.swift in Sources */,
 				BFE83918249CEB5A0067E6F2 /* Task.swift in Sources */,
+				BFE2FB5A24AB761300F583C6 /* DBSHProtocl.swift in Sources */,
 				BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */,
 				BFE838FE249B8BA90067E6F2 /* UIview+.swift in Sources */,
+				BFE2FB4724A9F90C00F583C6 /* DBManager.swift in Sources */,
+				BFE2FB4424A9DBAA00F583C6 /* PathManager.swift in Sources */,
+				BFE2FB5324AB33CF00F583C6 /* DBSQCode.swift in Sources */,
 				BFE2FB1724A5F7E400F583C6 /* CustomCVCell.swift in Sources */,
 				BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */,
 				BFE8391A249DF94E0067E6F2 /* MyTableView.swift in Sources */,
@@ -527,6 +594,7 @@
 				BFE2FB1A24A70EF000F583C6 /* MyAnimation.swift in Sources */,
 				BFE83906249B8EFF0067E6F2 /* HttpMannager.swift in Sources */,
 				BFE83912249C679B0067E6F2 /* LifeVC.swift in Sources */,
+				BFE2FB5D24AC97ED00F583C6 /* MyGestrue.swift in Sources */,
 				BFE2FB3F24A9A5C500F583C6 /* MySearch.swift in Sources */,
 				BFE2FB1524A5EDC500F583C6 /* CustomCViewFlowLayout.swift in Sources */,
 				BFE2FB1124A5B51000F583C6 /* MyCollectionView.swift in Sources */,

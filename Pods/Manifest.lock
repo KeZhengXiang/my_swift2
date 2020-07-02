@@ -4,6 +4,9 @@ PODS:
   - Kingfisher (4.10.1)
   - MJRefresh (3.4.3)
   - SnapKit (4.2.0)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -12,6 +15,7 @@ DEPENDENCIES:
   - Kingfisher
   - MJRefresh
   - SnapKit
+  - SQLite.swift
   - SwiftyJSON
 
 SPEC REPOS:
@@ -21,6 +25,7 @@ SPEC REPOS:
     - Kingfisher
     - MJRefresh
     - SnapKit
+    - SQLite.swift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -29,8 +34,9 @@ SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: f2d99f82b07c9281f46dee0dfa7f2caff9ba04f7
+PODFILE CHECKSUM: d33ee72ad9bdabfbb40c2a910ca2d7ebac7431fb
 
 COCOAPODS: 1.9.1

@@ -17,5 +17,8 @@ target 'newTest' do
 
   #上拉加载 下拉刷新
   pod 'MJRefresh'
+  
+  #数据库
+  pod 'SQLite.swift'
 
 end

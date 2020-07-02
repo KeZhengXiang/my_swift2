@@ -15,8 +15,8 @@ class MySearch: UIViewController {
     //需要存储本地   （后续添加）
     //显示限制条数
     let count = 2
-    //历史记录
-    var history: Array<String> = ["成都","重庆","上海","广州","珠海"]
+    //历史记录  ["成都","重庆","上海","广州","珠海"]
+    var historys: Array<String> = []
     
     //累加Y高度  初始绕过状态高度
     var _h :CGFloat = kStatusBarHeight
@@ -88,24 +88,52 @@ class MySearch: UIViewController {
         view.addSubview(searchBar)
         view.addSubview(tabView)
         
+        //读取数据库
+        findDB()
         
         updateTable()
     }
     
+    override func viewDidDisappear (_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        //存储数据到DB
+        updateDB()
+        
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     func updateTable(){
-        let showCount :Int = count > self.history.count ? self.history.count : count
+        let showCount :Int = count > self.historys.count ? self.historys.count : count
         print(tabView.safeAreaInsets)
 //        tabView.Inse = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         tabView.frame.size = CGSize(width: tabView.frame.size.width, height: cellH * CGFloat(showCount))
         
         tabView.reloadData()
     }
+    func insert(){
+        //["成都","重庆","上海","广州","珠海"]
+    }
+    func findDB(){
+        if let model :DBHistorysModel = try? DBSHHelper.find(key: "历史记录").first {
+            historys = model.historys
+        }else{
+            
+        }
+    }
+    func updateDB(){
+        do {
+            let _item = DBHistorysModel(name: "历史记录", historys: historys, icon: UIImage(named: "5e9e6df83a2eb")!)
+            try DBSHHelper.update(item: _item)
+        }catch _{
+        }
+    }
 }
 
 
 extension MySearch : UITableViewDataSource, UITableViewDelegate, MySearchCellDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return count > self.history.count ? self.history.count : count
+        return count > self.historys.count ? self.historys.count : count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -114,7 +142,7 @@ extension MySearch : UITableViewDataSource, UITableViewDelegate, MySearchCellDel
         cell.cellH = cellH
         cell.delegate = self
         cell.createUI()
-        cell.label.text = history[indexPath.row];
+        cell.label.text = historys[indexPath.row];
         return cell
     }
     
@@ -124,14 +152,14 @@ extension MySearch : UITableViewDataSource, UITableViewDelegate, MySearchCellDel
     
     //删除历史记录
     func deleteItem(_ indexPath: IndexPath) {
-        history.remove(at: indexPath.row)
+        historys.remove(at: indexPath.row)
 //        tabView.deleteRows(at:[indexPath], with: UITableView.RowAnimation.left)
         updateTable()
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let str = history[indexPath.row]
+        let str = historys[indexPath.row]
         searchBar.text = str
         searchBar(searchBar,textDidChange: str)
         searchBarSearchButtonClicked(searchBar)
@@ -176,17 +204,17 @@ extension MySearch : UISearchBarDelegate {
         print("点击了“搜索”按钮")
         //收录搜索关键字
         if let str = searchBar.text {
-            history.insert(str, at: 0)
+            historys.insert(str, at: 0)
             self.tabView.reloadData()
         }
-        
-        //异步存储到本地 --
+        searchBar.text = ""
+        updateTable()
         
 //        searchBar..becomeFirstResponder()//弹出键盘
-        searchBar.resignFirstResponder()//收起键盘
+//        searchBar.resignFirstResponder()//收起键盘
         
         //跳转
-        self.navigationController?.popViewController(animated: false)
+//        self.navigationController?.popViewController(animated: false)
     }
     func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
         print("点击了“书签”按钮")

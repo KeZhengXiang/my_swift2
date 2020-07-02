@@ -18,9 +18,10 @@ extension String {
         return encodeUrlString ?? ""
     }
     
-    //将编码后的url转换回原始的url
+    //将编码后的url解码回原始的url
     func urlDecoded() -> String {
         return self.removingPercentEncoding ?? ""
     }
+    
     
 }

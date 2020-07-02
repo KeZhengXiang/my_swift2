@@ -17,6 +17,7 @@ class LifeVC: UIViewController {
     override func loadView() {
         super.loadView()
         print("loadView")
+        title = "生命周期"
     }
     
     //视图加载完成

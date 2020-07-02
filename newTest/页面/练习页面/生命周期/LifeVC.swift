@@ -4,9 +4,10 @@
 //
 //  Created by one on 2020/6/19.
 //  Copyright © 2020 one. All rights reserved.
-//
+//  https://www.hangge.com/blog/cache/detail_1319.html
 
 import UIKit
+import WebKit
 
 
 class LifeVC: UIViewController {
@@ -17,7 +18,6 @@ class LifeVC: UIViewController {
     override func loadView() {
         super.loadView()
         print("loadView")
-        title = "生命周期"
     }
     
     //视图加载完成
@@ -27,6 +27,16 @@ class LifeVC: UIViewController {
         
         self.title = "UIViewController 生命周期"
         view.backgroundColor = UIColor.systemYellow
+        
+        // 创建 WKWebView 视图
+        let myWebView = WKWebView(frame: self.view.bounds)
+        // 创建网页 URL
+        let url = URL(string: "https://www.hangge.com/blog/cache/detail_1319.html")
+        // 创建请求
+        let req = URLRequest(url: url!)
+        // 加载网页
+        myWebView.load(req)
+        self.view.addSubview(myWebView)
         
     }
     

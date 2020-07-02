@@ -24,6 +24,20 @@
 		BFE2FB5924AB761300F583C6 /* DBSHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB5724AB761300F583C6 /* DBSHHelper.swift */; };
 		BFE2FB5A24AB761300F583C6 /* DBSHProtocl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB5824AB761300F583C6 /* DBSHProtocl.swift */; };
 		BFE2FB5D24AC97ED00F583C6 /* MyGestrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB5C24AC97ED00F583C6 /* MyGestrue.swift */; };
+		BFE2FB6A24ADD1D000F583C6 /* CGLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB6924ADD1D000F583C6 /* CGLineView.swift */; };
+		BFE2FB6C24ADD20800F583C6 /* MyCoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB6B24ADD20800F583C6 /* MyCoreGraphics.swift */; };
+		BFE2FB6E24ADE54400F583C6 /* CGArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB6D24ADE54400F583C6 /* CGArcView.swift */; };
+		BFE2FB7024ADE85300F583C6 /* CGQuadCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB6F24ADE85300F583C6 /* CGQuadCurveView.swift */; };
+		BFE2FB7324ADEDCF00F583C6 /* CGLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB7224ADEDCF00F583C6 /* CGLineVC.swift */; };
+		BFE2FB7524ADF15700F583C6 /* CGGraphicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB7424ADF15700F583C6 /* CGGraphicsVC.swift */; };
+		BFE2FB7724ADF19700F583C6 /* CGRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB7624ADF19700F583C6 /* CGRectView.swift */; };
+		BFE2FB7924ADF3BB00F583C6 /* CGEllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB7824ADF3BB00F583C6 /* CGEllipseView.swift */; };
+		BFE2FB7B24ADF50800F583C6 /* CGFZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB7A24ADF50800F583C6 /* CGFZView.swift */; };
+		BFE2FB7E24ADF6EC00F583C6 /* CGGradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB7D24ADF6EC00F583C6 /* CGGradientVC.swift */; };
+		BFE2FB8024ADF77F00F583C6 /* CGGradient1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB7F24ADF77F00F583C6 /* CGGradient1.swift */; };
+		BFE2FB8224ADF78400F583C6 /* CGGradient2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB8124ADF78400F583C6 /* CGGradient2.swift */; };
+		BFE2FB8424ADF78B00F583C6 /* CGGradient3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB8324ADF78B00F583C6 /* CGGradient3.swift */; };
+		BFE2FB8624ADF86800F583C6 /* CGGradient4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB8524ADF86800F583C6 /* CGGradient4.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -82,6 +96,20 @@
 		BFE2FB5724AB761300F583C6 /* DBSHHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSHHelper.swift; sourceTree = "<group>"; };
 		BFE2FB5824AB761300F583C6 /* DBSHProtocl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSHProtocl.swift; sourceTree = "<group>"; };
 		BFE2FB5C24AC97ED00F583C6 /* MyGestrue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGestrue.swift; sourceTree = "<group>"; };
+		BFE2FB6924ADD1D000F583C6 /* CGLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGLineView.swift; sourceTree = "<group>"; };
+		BFE2FB6B24ADD20800F583C6 /* MyCoreGraphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoreGraphics.swift; sourceTree = "<group>"; };
+		BFE2FB6D24ADE54400F583C6 /* CGArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGArcView.swift; sourceTree = "<group>"; };
+		BFE2FB6F24ADE85300F583C6 /* CGQuadCurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGQuadCurveView.swift; sourceTree = "<group>"; };
+		BFE2FB7224ADEDCF00F583C6 /* CGLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGLineVC.swift; sourceTree = "<group>"; };
+		BFE2FB7424ADF15700F583C6 /* CGGraphicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGraphicsVC.swift; sourceTree = "<group>"; };
+		BFE2FB7624ADF19700F583C6 /* CGRectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectView.swift; sourceTree = "<group>"; };
+		BFE2FB7824ADF3BB00F583C6 /* CGEllipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGEllipseView.swift; sourceTree = "<group>"; };
+		BFE2FB7A24ADF50800F583C6 /* CGFZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFZView.swift; sourceTree = "<group>"; };
+		BFE2FB7D24ADF6EC00F583C6 /* CGGradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGradientVC.swift; sourceTree = "<group>"; };
+		BFE2FB7F24ADF77F00F583C6 /* CGGradient1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGradient1.swift; sourceTree = "<group>"; };
+		BFE2FB8124ADF78400F583C6 /* CGGradient2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGradient2.swift; sourceTree = "<group>"; };
+		BFE2FB8324ADF78B00F583C6 /* CGGradient3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGradient3.swift; sourceTree = "<group>"; };
+		BFE2FB8524ADF86800F583C6 /* CGGradient4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGradient4.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* newTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +287,51 @@
 			path = "七种手势";
 			sourceTree = "<group>";
 		};
+		BFE2FB5E24ADCD1D00F583C6 /* Core Graphics绘图 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB6B24ADD20800F583C6 /* MyCoreGraphics.swift */,
+				BFE2FB7C24ADF6C700F583C6 /* 渐变 */,
+				BFE2FB6424ADD12600F583C6 /* 线条 */,
+				BFE2FB7124ADEAE600F583C6 /* 图形 */,
+			);
+			path = "Core Graphics绘图";
+			sourceTree = "<group>";
+		};
+		BFE2FB6424ADD12600F583C6 /* 线条 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB7224ADEDCF00F583C6 /* CGLineVC.swift */,
+				BFE2FB6924ADD1D000F583C6 /* CGLineView.swift */,
+				BFE2FB6D24ADE54400F583C6 /* CGArcView.swift */,
+				BFE2FB6F24ADE85300F583C6 /* CGQuadCurveView.swift */,
+			);
+			path = "线条";
+			sourceTree = "<group>";
+		};
+		BFE2FB7124ADEAE600F583C6 /* 图形 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB7424ADF15700F583C6 /* CGGraphicsVC.swift */,
+				BFE2FB7624ADF19700F583C6 /* CGRectView.swift */,
+				BFE2FB7824ADF3BB00F583C6 /* CGEllipseView.swift */,
+				BFE2FB7A24ADF50800F583C6 /* CGFZView.swift */,
+			);
+			path = "图形";
+			sourceTree = "<group>";
+		};
+		BFE2FB7C24ADF6C700F583C6 /* 渐变 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB7D24ADF6EC00F583C6 /* CGGradientVC.swift */,
+				BFE2FB7F24ADF77F00F583C6 /* CGGradient1.swift */,
+				BFE2FB8124ADF78400F583C6 /* CGGradient2.swift */,
+				BFE2FB8324ADF78B00F583C6 /* CGGradient3.swift */,
+				BFE2FB8524ADF86800F583C6 /* CGGradient4.swift */,
+			);
+			path = "渐变";
+			sourceTree = "<group>";
+		};
 		BFE838B3249B8A6C0067E6F2 = {
 			isa = PBXGroup;
 			children = (
@@ -287,12 +360,12 @@
 				BFE8390E249C5E870067E6F2 /* 页面 */,
 				BFE838F8249B8BA90067E6F2 /* 工具 */,
 				BFE838F5249B8BA90067E6F2 /* 扩展 */,
+				BFE83909249BB0C20067E6F2 /* Model */,
 				BFE838F7249B8BA90067E6F2 /* 网络 */,
 				BFE838C3249B8A6C0067E6F2 /* Main.storyboard */,
 				BFE838C6249B8A6D0067E6F2 /* Assets.xcassets */,
 				BFE838C8249B8A6D0067E6F2 /* LaunchScreen.storyboard */,
 				BFE838CB249B8A6D0067E6F2 /* Info.plist */,
-				BFE83909249BB0C20067E6F2 /* Model */,
 			);
 			path = newTest;
 			sourceTree = "<group>";
@@ -317,6 +390,7 @@
 		BFE838F8249B8BA90067E6F2 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FB4524A9E3FD00F583C6 /* 沙盒路径 */,
 				BFE838F9249B8BA90067E6F2 /* Common.swift */,
 			);
 			path = "工具";
@@ -325,8 +399,8 @@
 		BFE838FA249B8BA90067E6F2 /* 练习页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FB5E24ADCD1D00F583C6 /* Core Graphics绘图 */,
 				BFE2FB5B24AC976300F583C6 /* 七种手势 */,
-				BFE2FB4524A9E3FD00F583C6 /* 沙盒路径 */,
 				BFE2FB4024A9B29800F583C6 /* 数据库 */,
 				BFE83910249C67720067E6F2 /* 生命周期 */,
 				BFE83914249C6AEA0067E6F2 /* 设备信息-监听设备 */,
@@ -570,35 +644,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE2FB1324A5ECED00F583C6 /* CustomCollectionView.swift in Sources */,
+				BFE2FB7924ADF3BB00F583C6 /* CGEllipseView.swift in Sources */,
 				BFE2FB3724A9A59500F583C6 /* MySafeAreaInsets.swift in Sources */,
 				BFE8391C249F1DE00067E6F2 /* RefreshView.swift in Sources */,
 				BFE838FF249B8BA90067E6F2 /* Common.swift in Sources */,
+				BFE2FB8424ADF78B00F583C6 /* CGGradient3.swift in Sources */,
+				BFE2FB6E24ADE54400F583C6 /* CGArcView.swift in Sources */,
+				BFE2FB7E24ADF6EC00F583C6 /* CGGradientVC.swift in Sources */,
+				BFE2FB7724ADF19700F583C6 /* CGRectView.swift in Sources */,
+				BFE2FB7524ADF15700F583C6 /* CGGraphicsVC.swift in Sources */,
+				BFE2FB8024ADF77F00F583C6 /* CGGradient1.swift in Sources */,
 				BFE2FB5924AB761300F583C6 /* DBSHHelper.swift in Sources */,
 				BFE83916249C6CEA0067E6F2 /* NavigationVC.swift in Sources */,
 				BFE8391E249F1DEF0067E6F2 /* LoadMoreView.swift in Sources */,
 				BFE2FB4224A9B2C400F583C6 /* MyDBVC.swift in Sources */,
+				BFE2FB8224ADF78400F583C6 /* CGGradient2.swift in Sources */,
 				BFE83904249B8E150067E6F2 /* String+.swift in Sources */,
 				BFE83901249B8BA90067E6F2 /* MyDevice.swift in Sources */,
 				BFE83918249CEB5A0067E6F2 /* Task.swift in Sources */,
 				BFE2FB5A24AB761300F583C6 /* DBSHProtocl.swift in Sources */,
 				BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */,
+				BFE2FB7324ADEDCF00F583C6 /* CGLineVC.swift in Sources */,
 				BFE838FE249B8BA90067E6F2 /* UIview+.swift in Sources */,
 				BFE2FB4724A9F90C00F583C6 /* DBManager.swift in Sources */,
 				BFE2FB4424A9DBAA00F583C6 /* PathManager.swift in Sources */,
 				BFE2FB5324AB33CF00F583C6 /* DBSQCode.swift in Sources */,
+				BFE2FB6C24ADD20800F583C6 /* MyCoreGraphics.swift in Sources */,
 				BFE2FB1724A5F7E400F583C6 /* CustomCVCell.swift in Sources */,
 				BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */,
 				BFE8391A249DF94E0067E6F2 /* MyTableView.swift in Sources */,
+				BFE2FB6A24ADD1D000F583C6 /* CGLineView.swift in Sources */,
 				BFE83908249BB0480067E6F2 /* ModelTest.swift in Sources */,
 				BFE2FB3B24A9A5B300F583C6 /* MyScrollView.swift in Sources */,
+				BFE2FB7024ADE85300F583C6 /* CGQuadCurveView.swift in Sources */,
 				BFE2FB1A24A70EF000F583C6 /* MyAnimation.swift in Sources */,
 				BFE83906249B8EFF0067E6F2 /* HttpMannager.swift in Sources */,
+				BFE2FB8624ADF86800F583C6 /* CGGradient4.swift in Sources */,
 				BFE83912249C679B0067E6F2 /* LifeVC.swift in Sources */,
 				BFE2FB5D24AC97ED00F583C6 /* MyGestrue.swift in Sources */,
 				BFE2FB3F24A9A5C500F583C6 /* MySearch.swift in Sources */,
 				BFE2FB1524A5EDC500F583C6 /* CustomCViewFlowLayout.swift in Sources */,
 				BFE2FB1124A5B51000F583C6 /* MyCollectionView.swift in Sources */,
 				BFE2FB1C24A730A900F583C6 /* TestMain.swift in Sources */,
+				BFE2FB7B24ADF50800F583C6 /* CGFZView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,14 +17,15 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         "生命周期 LifeVC",
         "安全区域-刘海屏 MySafeAreaInsets",
         "导航栏 NavigationVC",
+        "滑动容器 MyScrollView",
         "列表 MyTableView",
         "网格 MyCollectionView",
         "网格-瀑布流 CustomCollectionView",
         "动画 MyAnimation",
-        "滑动容器 MyScrollView",
         "搜索 MySearch",
         "数据库 SQLite",
-        "七种手势"]
+        "七种手势 MyGestrue",
+        "绘制 MyCoreGraphics"]
     
     var tableview :UITableView!
     
@@ -34,14 +35,15 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 1: return LifeVC()
         case 2: return MySafeAreaInsets()
         case 3: return NavigationVC()
-        case 4: return MyTableView()
-        case 5: return MyCollectionView()
-        case 6: return CustomCollectionView()
-        case 7: return MyAnimation()
-        case 8: return MyScrollView()
+        case 4: return MyScrollView()
+        case 5: return MyTableView()
+        case 6: return MyCollectionView()
+        case 7: return CustomCollectionView()
+        case 8: return MyAnimation()
         case 9: return MySearch()
         case 10:return MyDBVC()
         case 11:return MyGestrue()
+        case 12:return MyCoreGraphics()
         default:
             return UIViewController()
         }

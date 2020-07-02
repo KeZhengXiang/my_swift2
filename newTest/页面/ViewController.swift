@@ -10,25 +10,30 @@ import UIKit
 import SwiftyJSON
 
 class ViewController: UIViewController {
+    
+    lazy var btnJump :UIButton = {
+        let button = UIButton(type: .system)
+        button.frame = CGRect(x: 10, y: 150, width: 200, height: 30)
+        button.center = view.center
+        button.setTitle("进入测试页面", for: .normal)
+        button.backgroundColor = UIColor.green
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.title = "首页"
+        view.backgroundColor = UIColor.systemYellow
+        
         printViewParam()
         
-        //创建返回按钮
-        let button:UIButton = UIButton(type: .system)
-        button.frame = CGRect(x: 10, y: 150, width: 200, height: 30)
-        button.center = view.center
-        button.setTitle("进入测试页面", for: .normal)
-        button.backgroundColor = UIColor.green
-        button.addTarget(self,action:#selector(jump),for:.touchUpInside)
-        self.view.addSubview(button);
+        btnJump.addTarget(self,action:#selector(jump),for:.touchUpInside)
+        self.view.addSubview(btnJump);
         
         //请求网络数据
-        HttpManager.shared.useHttp();
+//        HttpManager.shared.useHttp()
     }
     
     
@@ -56,7 +61,6 @@ class ViewController: UIViewController {
         print("状态栏高度 kStatusBarHeight: \(kStatusBarHeight)")
         print("TabBar高度 kTabBarHeight: \(kTabBarHeight)")
         print("底部安全高度 kBottomSafeHeight:  \(kBottomSafeHeight)")
-        
         print("安全区域 kSafeAreaInsets:  \(kSafeAreaInsets!)")
     }
 }

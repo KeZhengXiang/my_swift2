@@ -60,25 +60,25 @@ class NavigationVC : UIViewController {
 //        self.navigationItem.prompt = "提示文本";
         
         /*----------------------UINavigationItem两侧按钮----------------*/
-//        let leftItem1 = UIBarButtonItem(title: "anniu", style: UIBarButtonItem.Style.done, target: self, action: #selector(leftAnniuClick))
-////        self.navigationItem.leftBarButtonItem = leftItem1//第一种方式
-//
-//        let leftItem2 = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: #selector(btnClick(btn:)))
-////        self.navigationItem.leftBarButtonItem = leftItem2//第一种方式
-//        //第二种方式
-//        self.navigationItem.leftBarButtonItems = [leftItem1, leftItem2]
+        let leftItem1 = UIBarButtonItem(title: "anniu", style: UIBarButtonItem.Style.done, target: self, action: #selector(leftAnniuClick))
+//        self.navigationItem.leftBarButtonItem = leftItem1//第一种方式
+
+        let leftItem2 = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: #selector(btnClick(btn:)))
+//        self.navigationItem.leftBarButtonItem = leftItem2//第一种方式
+        //第二种方式
+        self.navigationItem.leftBarButtonItems = [leftItem1, leftItem2]
         
         //第三种方式（自定义按钮）
-//        let rightButton = UIButton(type: UIButton.ButtonType.custom)
-//        rightButton.setTitle("右侧按钮", for: .normal)
-//        rightButton.setTitleColor(UIColor.red, for: .normal)
-//        rightButton.tintColor = UIColor.red
-//        rightButton.frame = CGRect(x: 0, y: 0, width: 33, height: 32)
-////        rightButton.addTarget(self, action: #selector(rightButton), for: .touchUpInside)
-//        rightButton.addTarget(self,action:#selector(rightBtnClick),for:.touchUpInside)
-////        rightButton.setImage(UIImage(named: "navbar_bg_normal"), for: UIControl.State.normal)
-//        let rightItem = UIBarButtonItem(customView: rightButton)
-//        self.navigationItem.rightBarButtonItem = rightItem
+        let rightButton = UIButton(type: UIButton.ButtonType.custom)
+        rightButton.setTitle("右侧按钮", for: .normal)
+        rightButton.setTitleColor(UIColor.red, for: .normal)
+        rightButton.tintColor = UIColor.red
+        rightButton.frame = CGRect(x: 0, y: 0, width: 33, height: 32)
+//        rightButton.addTarget(self, action: #selector(rightButton), for: .touchUpInside)
+        rightButton.addTarget(self,action:#selector(rightBtnClick),for:.touchUpInside)
+//        rightButton.setImage(UIImage(named: "navbar_bg_normal"), for: UIControl.State.normal)
+        let rightItem = UIBarButtonItem(customView: rightButton)
+        self.navigationItem.rightBarButtonItem = rightItem
         
         
         
@@ -98,8 +98,8 @@ class NavigationVC : UIViewController {
     
     @objc func jump(){
         print("点击")
-        self.viewWillLayoutSubviews()
-        
+//        self.viewWillLayoutSubviews()
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
     }
     
     
@@ -121,7 +121,7 @@ class NavigationVC : UIViewController {
     @objc func rightBtnClick() {
         
         print("rightBtnClick")
-        
+        self.navigationController?.popViewController(animated: true)
     }
     
     

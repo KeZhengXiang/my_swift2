@@ -26,7 +26,8 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         "数据库 SQLite",
         "七种手势 MyGestrue",
         "绘制 MyCoreGraphics",
-        "page MyPageViewController"]
+        "page MyPageViewController",
+        "高德地图sdk MyMapController"]
     
     var tableview :UITableView!
     
@@ -46,6 +47,7 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 11:return MyGestrue()
         case 12:return MyCoreGraphics()
         case 13:return MyPageViewController()
+        case 14:return MyMapController()
         default:
             return UIViewController()
         }

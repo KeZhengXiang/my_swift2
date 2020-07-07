@@ -20,5 +20,12 @@ target 'newTest' do
   
   #数据库
   pod 'SQLite.swift'
+  
+  
+  ######高德地图sdk#######
+  pod 'AMap3DMap', '~>7.5.0' #3D地图SDK
+  pod 'AMapSearch', '~>7.3.0' #地图SDK搜索功能
+  pod 'AMapLocation', '~>2.6.5' #定位SDK
+  
 
 end

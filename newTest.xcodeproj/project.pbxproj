@@ -41,6 +41,8 @@
 		BFE2FB8924AED53200F583C6 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB8824AED53200F583C6 /* MyPageViewController.swift */; };
 		BFE2FB8C24B42E7900F583C6 /* MyMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB8B24B42E7900F583C6 /* MyMapController.swift */; };
 		BFE2FB9224B435F300F583C6 /* KViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9124B435F300F583C6 /* KViewController.swift */; };
+		BFE2FB9524B43C5C00F583C6 /* AnnotateAndMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9424B43C5C00F583C6 /* AnnotateAndMark.swift */; };
+		BFE2FB9924B44A8500F583C6 /* KFastButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9824B44A8500F583C6 /* KFastButton.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -116,6 +118,8 @@
 		BFE2FB8824AED53200F583C6 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		BFE2FB8B24B42E7900F583C6 /* MyMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapController.swift; sourceTree = "<group>"; };
 		BFE2FB9124B435F300F583C6 /* KViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KViewController.swift; sourceTree = "<group>"; };
+		BFE2FB9424B43C5C00F583C6 /* AnnotateAndMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotateAndMark.swift; sourceTree = "<group>"; };
+		BFE2FB9824B44A8500F583C6 /* KFastButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFastButton.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* newTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -362,6 +366,22 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		BFE2FB9324B43C1700F583C6 /* 注释+标记 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB9424B43C5C00F583C6 /* AnnotateAndMark.swift */,
+			);
+			path = "注释+标记";
+			sourceTree = "<group>";
+		};
+		BFE2FB9624B44A3800F583C6 /* fast-快速创建 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FB9824B44A8500F583C6 /* KFastButton.swift */,
+			);
+			path = "fast-快速创建";
+			sourceTree = "<group>";
+		};
 		BFE838B3249B8A6C0067E6F2 = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +408,7 @@
 			children = (
 				BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */,
 				BFE2FB9024B435F300F583C6 /* Base */,
+				BFE2FB9624B44A3800F583C6 /* fast-快速创建 */,
 				BFE8390E249C5E870067E6F2 /* 页面 */,
 				BFE838F8249B8BA90067E6F2 /* 工具 */,
 				BFE838F5249B8BA90067E6F2 /* 扩展 */,
@@ -430,6 +451,7 @@
 		BFE838FA249B8BA90067E6F2 /* 练习页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FB9324B43C1700F583C6 /* 注释+标记 */,
 				BFE2FB8A24B42E5100F583C6 /* 高德地图 */,
 				BFE2FB8724AED4F300F583C6 /* UIPageViewController */,
 				BFE2FB5E24ADCD1D00F583C6 /* Core Graphics绘图 */,
@@ -512,6 +534,7 @@
 				BFE838B9249B8A6C0067E6F2 /* Frameworks */,
 				BFE838BA249B8A6C0067E6F2 /* Resources */,
 				458FD31D9C1F6F4FF66130AB /* [CP] Embed Pods Frameworks */,
+				7FEDD1D61937BD43F5AE08C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -647,6 +670,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newTest/Pods-newTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7FEDD1D61937BD43F5AE08C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newTest/Pods-newTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newTest/Pods-newTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newTest/Pods-newTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DD882905D56C42A37D5BA858 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -700,11 +740,13 @@
 				BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */,
 				BFE2FB8C24B42E7900F583C6 /* MyMapController.swift in Sources */,
 				BFE2FB7324ADEDCF00F583C6 /* CGLineVC.swift in Sources */,
+				BFE2FB9524B43C5C00F583C6 /* AnnotateAndMark.swift in Sources */,
 				BFE838FE249B8BA90067E6F2 /* UIview+.swift in Sources */,
 				BFE2FB4724A9F90C00F583C6 /* DBManager.swift in Sources */,
 				BFE2FB4424A9DBAA00F583C6 /* PathManager.swift in Sources */,
 				BFE2FB5324AB33CF00F583C6 /* DBSQCode.swift in Sources */,
 				BFE2FB6C24ADD20800F583C6 /* MyCoreGraphics.swift in Sources */,
+				BFE2FB9924B44A8500F583C6 /* KFastButton.swift in Sources */,
 				BFE2FB1724A5F7E400F583C6 /* CustomCVCell.swift in Sources */,
 				BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */,
 				BFE8391A249DF94E0067E6F2 /* MyTableView.swift in Sources */,

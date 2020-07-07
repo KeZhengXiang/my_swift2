@@ -4,12 +4,13 @@
 //
 //  Created by one on 2020/6/17.
 //  Copyright © 2020 one. All rights reserved.
-//
+//  从者云集-学习Demo
 
 import UIKit
 import SwiftyJSON
 
 class ViewController: UIViewController {
+    
     
     lazy var btnJump :UIButton = {
         let button = UIButton(type: .system)
@@ -34,6 +35,9 @@ class ViewController: UIViewController {
         
         //请求网络数据
 //        HttpManager.shared.useHttp()
+        
+        let identifier = Bundle.main.bundleIdentifier
+        print("identifier = \(identifier!)")
     }
     
     
@@ -44,6 +48,7 @@ class ViewController: UIViewController {
     
     //跳转到另一个视图
     @objc func jump(){
+        
         print("点击按钮，开始跳转！")
         let anotherVC = TestMain()
         //1

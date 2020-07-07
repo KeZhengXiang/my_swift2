@@ -132,7 +132,13 @@ class MySearch: UIViewController {
     func updateDB(){
         do {
             let _item = DBHistorysModel(name: "历史记录", historys: historys, icon: UIImage(named: "5e9e6df83a2eb")!)
-            try DBSHHelper.update(item: _item)
+            try DBSHHelper.delete(item: _item)
+        }catch _{
+        }
+        
+        do {
+            let _item = DBHistorysModel(name: "历史记录", historys: historys, icon: UIImage(named: "5e9e6df83a2eb")!)
+            try DBSHHelper.insert(item: _item)
         }catch _{
         }
     }

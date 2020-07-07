@@ -25,7 +25,8 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         "搜索 MySearch",
         "数据库 SQLite",
         "七种手势 MyGestrue",
-        "绘制 MyCoreGraphics"]
+        "绘制 MyCoreGraphics",
+        "page MyPageViewController"]
     
     var tableview :UITableView!
     
@@ -44,6 +45,7 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 10:return MyDBVC()
         case 11:return MyGestrue()
         case 12:return MyCoreGraphics()
+        case 13:return MyPageViewController()
         default:
             return UIViewController()
         }

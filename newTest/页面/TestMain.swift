@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 
-class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource {
 //    var lists :Array<UIViewController> = []
     let listNames :Array<String> = [
         "设备信息 监听设备 MyDevice",
@@ -28,8 +28,6 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         "绘制 MyCoreGraphics",
         "page MyPageViewController",
         "高德地图sdk MyMapController"]
-    
-    var tableview :UITableView!
     
     func getVC(index :Int) -> UIViewController {
         switch index {
@@ -52,6 +50,8 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
             return UIViewController()
         }
     }
+    // MARK:- life
+    var tableview :UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +64,17 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.tableview.dataSource = self;
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    // MARK:- UITableViewDataSource
     //分区数
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
@@ -73,6 +84,7 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
         return listNames.count ;
     }
     
+    // MARK:- UITableViewDelegate
     //cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = MyTestCell(style: .subtitle, reuseIdentifier: "MyTestCell")
@@ -96,7 +108,7 @@ class TestMain : UIViewController, UITableViewDelegate, UITableViewDataSource {
 }
 
 
-
+// MARK:- cells
 class MyTestCell: UITableViewCell {
     
     

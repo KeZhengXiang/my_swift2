@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 
-class LifeVC: UIViewController {
+class LifeVC: BaseViewController {
     
     
     
@@ -61,6 +61,7 @@ class LifeVC: UIViewController {
     //视图显示完成后执行
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        navigationController?.isNavigationBarHidden = false
         print("viewDidAppear")
     }
     

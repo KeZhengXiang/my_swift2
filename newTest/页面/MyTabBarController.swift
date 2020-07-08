@@ -11,8 +11,6 @@ import UIKit
 
 class MyTabBarController : UITabBarController {
     
-    
-    
     lazy var btnJump :UIButton = {
         let button = UIButton(type: .system)
         button.frame = CGRect(x: 10, y: 150, width: 200, height: 30)
@@ -21,6 +19,8 @@ class MyTabBarController : UITabBarController {
         button.backgroundColor = UIColor.green
         return button
     }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -75,7 +75,7 @@ class MyTabBarController : UITabBarController {
         
         self.viewControllers = [vc1,vc2,vc3,vc4]
         
-        self.selectedIndex = 3//初始选择标签
+        self.selectedIndex = 0//初始选择标签
         
         delegate = self
     }

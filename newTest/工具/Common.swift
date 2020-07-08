@@ -14,22 +14,53 @@ import UIKit
 let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
 
+// MARK: -屏幕参数
 //导航条高度
-let kNavigationBarHeight = CGFloat(isLiuHaiScreen ? 88.0 : 64.0)
+let kNavigationBarHeight :CGFloat = {
+    if (isIphone){
+        return CGFloat(isLiuHaiScreen ? 88.0 : 64.0)
+    }else{
+        return CGFloat(74.0)
+    }
+}()
+
 //状态栏高度
-let kStatusBarHeight = CGFloat(isLiuHaiScreen ? 44 : 20)
+let kStatusBarHeight :CGFloat = {
+    if (isIphone){
+        return CGFloat(isLiuHaiScreen ? 44 : 20)
+    }else{
+        return CGFloat(24.0)
+    }
+}()
+
 //TabBar高度
-let kTabBarHeight = CGFloat(isLiuHaiScreen ? (49+34) : 49)
+let kTabBarHeight :CGFloat = {
+    if (isIphone){
+        return CGFloat(isLiuHaiScreen ? (49+34) : 49)
+    }else{
+        return CGFloat(isLiuHaiScreen ? 65.0 : 50)
+    }
+}()
 
 //底部安全高度
-let kBottomSafeHeight = CGFloat(isLiuHaiScreen ? 34.0 : 0.0)
+let kBottomSafeHeight :CGFloat = {
+    if (isIphone){
+        return CGFloat(isLiuHaiScreen ? 34.0 : 0.0)
+    }else{
+        return CGFloat(isLiuHaiScreen ? 20.0 : 0.0)
+    }
+}()
 
+// MARK: -颜色
 //自定义颜色
 func kRGB(_ r :CGFloat, _ g :CGFloat, _ b :CGFloat) -> UIColor{
     return UIColor(red: r/255, green: g/255, blue: b/255, alpha: 1);
 }
 func kRGB(_ r :Int, _ g :Int, _ b :Int) -> UIColor{
     return kRGB(CGFloat(r),CGFloat(g),CGFloat(b))
+}
+func kRGB(_ r :CGFloat, _ g :CGFloat, _ b :CGFloat, _ a :CGFloat) -> UIColor{
+    return UIColor(red: r/255, green: g/255, blue: b/255, alpha: a)
 }
 
 //自定义颜色
@@ -73,6 +104,18 @@ var isLiuHaiScreen: Bool {
     return false
 }
 
+// MARK: -公共方法
+
+
+func printViewParam(){
+    print("全屏宽高 (kScreenW,kScreenH):（\(kScreenW)，\(kScreenH)）")
+    print("导航条高度 kNavigationBarHeight: \(kNavigationBarHeight)")
+    print("状态栏高度 kStatusBarHeight: \(kStatusBarHeight)")
+    print("TabBar高度 kTabBarHeight: \(kTabBarHeight)")
+    print("底部安全高度 kBottomSafeHeight:  \(kBottomSafeHeight)")
+    print("安全区域 kSafeAreaInsets:  \(kSafeAreaInsets!)")
+}
+
 
 /// 文本自适应宽高
 /// - Parameters:
@@ -113,3 +156,4 @@ func getRandom(){
 //    //2
 //    self.navigationController?.pushViewController(anotherVC, animated: true)
 //}
+

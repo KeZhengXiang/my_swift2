@@ -52,6 +52,8 @@
 		BFE2FC1824B5DC3200F583C6 /* MyTabVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1724B5DC3200F583C6 /* MyTabVC3.swift */; };
 		BFE2FC1A24B5DC3700F583C6 /* MyTabVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1924B5DC3700F583C6 /* MyTabVC4.swift */; };
 		BFE2FC1C24B5EAD100F583C6 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1B24B5EAD100F583C6 /* UIImage+.swift */; };
+		BFE2FC2124B5FC2200F583C6 /* LoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2024B5FC2200F583C6 /* LoadingController.swift */; };
+		BFE2FC2324B623BD00F583C6 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2224B623BC00F583C6 /* BannerView.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -138,6 +140,8 @@
 		BFE2FC1724B5DC3200F583C6 /* MyTabVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC3.swift; sourceTree = "<group>"; };
 		BFE2FC1924B5DC3700F583C6 /* MyTabVC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC4.swift; sourceTree = "<group>"; };
 		BFE2FC1B24B5EAD100F583C6 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		BFE2FC2024B5FC2200F583C6 /* LoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingController.swift; sourceTree = "<group>"; };
+		BFE2FC2224B623BC00F583C6 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* 从者云集学习Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "从者云集学习Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -432,6 +436,8 @@
 		BFE2FC1D24B5F5E200F583C6 /* 启动页 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FC2024B5FC2200F583C6 /* LoadingController.swift */,
+				BFE2FC2224B623BC00F583C6 /* BannerView.swift */,
 			);
 			path = "启动页";
 			sourceTree = "<group>";
@@ -794,6 +800,8 @@
 				BFE2FB8024ADF77F00F583C6 /* CGGradient1.swift in Sources */,
 				BFE2FB5924AB761300F583C6 /* DBSHHelper.swift in Sources */,
 				BFE83916249C6CEA0067E6F2 /* NavigationVC.swift in Sources */,
+				BFE2FC2124B5FC2200F583C6 /* LoadingController.swift in Sources */,
+				BFE2FC2324B623BD00F583C6 /* BannerView.swift in Sources */,
 				BFE8391E249F1DEF0067E6F2 /* LoadMoreView.swift in Sources */,
 				BFE2FB4224A9B2C400F583C6 /* MyDBVC.swift in Sources */,
 				BFE2FB8224ADF78400F583C6 /* CGGradient2.swift in Sources */,

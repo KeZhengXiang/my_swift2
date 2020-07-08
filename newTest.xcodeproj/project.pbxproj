@@ -410,13 +410,6 @@
 			path = AliPay;
 			sourceTree = "<group>";
 		};
-		BFE2FC0B24B5D1C600F583C6 /* 首页 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "首页";
-			sourceTree = "<group>";
-		};
 		BFE2FC0D24B5D67900F583C6 /* fast-快速创建 */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,7 +418,7 @@
 			path = "fast-快速创建";
 			sourceTree = "<group>";
 		};
-		BFE2FC1224B5DBC400F583C6 /* TabViewController */ = {
+		BFE2FC1224B5DBC400F583C6 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
 				BFE2FC1324B5DC1300F583C6 /* MyTabVC1.swift */,
@@ -433,7 +426,14 @@
 				BFE2FC1724B5DC3200F583C6 /* MyTabVC3.swift */,
 				BFE2FC1924B5DC3700F583C6 /* MyTabVC4.swift */,
 			);
-			path = TabViewController;
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		BFE2FC1D24B5F5E200F583C6 /* 启动页 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "启动页";
 			sourceTree = "<group>";
 		};
 		BFE838B3249B8A6C0067E6F2 = {
@@ -537,11 +537,11 @@
 		BFE8390E249C5E870067E6F2 /* 页面 */ = {
 			isa = PBXGroup;
 			children = (
-				BFE2FC1224B5DBC400F583C6 /* TabViewController */,
+				BFE2FC1D24B5F5E200F583C6 /* 启动页 */,
+				BFE2FC1224B5DBC400F583C6 /* 首页 */,
 				BFE2FC1024B5DA8700F583C6 /* MyTabBarController.swift */,
 				BFE838C1249B8A6C0067E6F2 /* ViewController.swift */,
 				BFE2FB1B24A730A900F583C6 /* TestMain.swift */,
-				BFE2FC0B24B5D1C600F583C6 /* 首页 */,
 				BFE838FA249B8BA90067E6F2 /* 练习页面 */,
 			);
 			path = "页面";

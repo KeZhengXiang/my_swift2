@@ -23,7 +23,7 @@ class  MyAnimation: UIViewController {
         v.backgroundColor = UIColor.red
         return v
     }()
-    //#imageLiteral #imageLiteral(resourceName: "5e9e6df83a2eb")
+    //#imageLiteral #imageLiteral(resourceName: "backImage0")
     lazy var image :UIImageView = {
         let v = UIImageView(image: #imageLiteral(resourceName: "navbar_bg_normal"))
         v.frame = imagePos
@@ -240,7 +240,7 @@ class  MyAnimation: UIViewController {
         let op :UIView.AnimationOptions = arr[Int(arc4random_uniform(7))]
         UIView.transition(with: self.image , duration: 0.6 , options: op, animations: {
           if self.image.image == #imageLiteral(resourceName: "navbar_bg_normal") {
-            self.image.image = #imageLiteral(resourceName: "5e9e6df83a2eb")
+            self.image.image = #imageLiteral(resourceName: "backImage0")
           }else{
             self.image.image = #imageLiteral(resourceName: "navbar_bg_normal")
           }
@@ -251,7 +251,7 @@ class  MyAnimation: UIViewController {
     //Transitions 帧动画
     @objc func jump7(){
         let rabbit = #imageLiteral(resourceName: "navbar_bg_normal")
-        let empty = #imageLiteral(resourceName: "5e9e6df83a2eb")
+        let empty = #imageLiteral(resourceName: "backImage0")
 //        UIGraphicsBeginImageContextWithOptions(rabbit.size , false, 0)
 //        let empty = UIGraphicsGetImageFromCurrentImageContext()!
 //        UIGraphicsEndImageContext()

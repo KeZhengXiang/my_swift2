@@ -15,6 +15,7 @@ import SQLite
 
 
 class MyDBVC :UIViewController {
+    let _item = DBHistorysModel(name: "道长生", historys: ["你好","123","abc"], icon: UIImage(named: "backImage0")!)
     
     var _h :CGFloat = 150
     
@@ -31,8 +32,6 @@ class MyDBVC :UIViewController {
     @objc func insertClick(){
         print("count = \(DBSHHelper.count)")
         do {
-            let _item = DBHistorysModel(name: "道长生", historys: ["你好","123","abc"], icon: UIImage(named: "5e9e6df83a2eb")!)
-//            let _item = DBHistorysModel(name: "历史记录", historys: ["成都","重庆","上海","广州","珠海"], icon: UIImage(named: "5e9e6df83a2eb")!)
             try DBSHHelper.insert(item: _item)
         }catch _{
         }
@@ -49,7 +48,6 @@ class MyDBVC :UIViewController {
     }()
     @objc func updateClick(){
         do {
-            let _item = DBHistorysModel(name: "道长生", historys: ["你好","123","abc"], icon: UIImage(named: "5e9e6df83a2eb")!)
             try DBSHHelper.update(item: _item)
         }catch _{
         }
@@ -66,7 +64,6 @@ class MyDBVC :UIViewController {
     }()
     @objc func deleteClick(){
         do {
-            let _item = DBHistorysModel(name: "道长生", historys: ["你好","123","abc"], icon: UIImage(named: "5e9e6df83a2eb")!)
             try DBSHHelper.delete(item: _item)
         }catch _{
         }

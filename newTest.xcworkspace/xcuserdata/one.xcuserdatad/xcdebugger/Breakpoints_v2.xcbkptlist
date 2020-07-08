@@ -358,8 +358,8 @@
             filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/&#x6570;&#x636e;&#x5e93;/MyDBVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "MyDBVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -374,8 +374,8 @@
             filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/&#x6570;&#x636e;&#x5e93;/MyDBVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "MyDBVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -390,8 +390,8 @@
             filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/&#x6570;&#x636e;&#x5e93;/MyDBVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "MyDBVC"
             landmarkType = "3">
             <Locations>
@@ -438,8 +438,8 @@
             filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/&#x6570;&#x636e;&#x5e93;/MyDBVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "MyDBVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -566,8 +566,8 @@
             filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/&#x6570;&#x636e;&#x5e93;/MyDBVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "imgClick()"
             landmarkType = "7">
          </BreakpointContent>
@@ -838,8 +838,8 @@
             filePath = "newTest/&#x9875;&#x9762;/&#x7ec3;&#x4e60;&#x9875;&#x9762;/&#x6570;&#x636e;&#x5e93;/MyDBVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "imgClick()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1066,6 +1066,22 @@
             endingLineNumber = "80"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED48B2DC-DF7D-4802-BF8A-CF5FEAAE4F23"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x542f;&#x52a8;&#x9875;/LoadingView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

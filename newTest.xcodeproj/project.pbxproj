@@ -46,6 +46,12 @@
 		BFE2FB9E24B48E4400F583C6 /* AliPaySDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9D24B48E4400F583C6 /* AliPaySDK.swift */; };
 		BFE2FBA124B4A6C900F583C6 /* AliPayResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FBA024B4A6C900F583C6 /* AliPayResultStatus.swift */; };
 		BFE2FC0F24B5D67900F583C6 /* KFastButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC0E24B5D67900F583C6 /* KFastButton.swift */; };
+		BFE2FC1124B5DA8700F583C6 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1024B5DA8700F583C6 /* MyTabBarController.swift */; };
+		BFE2FC1424B5DC1300F583C6 /* MyTabVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1324B5DC1300F583C6 /* MyTabVC1.swift */; };
+		BFE2FC1624B5DC2B00F583C6 /* MyTabVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1524B5DC2B00F583C6 /* MyTabVC2.swift */; };
+		BFE2FC1824B5DC3200F583C6 /* MyTabVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1724B5DC3200F583C6 /* MyTabVC3.swift */; };
+		BFE2FC1A24B5DC3700F583C6 /* MyTabVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1924B5DC3700F583C6 /* MyTabVC4.swift */; };
+		BFE2FC1C24B5EAD100F583C6 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1B24B5EAD100F583C6 /* UIImage+.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -126,6 +132,12 @@
 		BFE2FB9D24B48E4400F583C6 /* AliPaySDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliPaySDK.swift; sourceTree = "<group>"; };
 		BFE2FBA024B4A6C900F583C6 /* AliPayResultStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliPayResultStatus.swift; sourceTree = "<group>"; };
 		BFE2FC0E24B5D67900F583C6 /* KFastButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KFastButton.swift; sourceTree = "<group>"; };
+		BFE2FC1024B5DA8700F583C6 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		BFE2FC1324B5DC1300F583C6 /* MyTabVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC1.swift; sourceTree = "<group>"; };
+		BFE2FC1524B5DC2B00F583C6 /* MyTabVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC2.swift; sourceTree = "<group>"; };
+		BFE2FC1724B5DC3200F583C6 /* MyTabVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC3.swift; sourceTree = "<group>"; };
+		BFE2FC1924B5DC3700F583C6 /* MyTabVC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC4.swift; sourceTree = "<group>"; };
+		BFE2FC1B24B5EAD100F583C6 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* 从者云集学习Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "从者云集学习Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -413,6 +425,17 @@
 			path = "fast-快速创建";
 			sourceTree = "<group>";
 		};
+		BFE2FC1224B5DBC400F583C6 /* TabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FC1324B5DC1300F583C6 /* MyTabVC1.swift */,
+				BFE2FC1524B5DC2B00F583C6 /* MyTabVC2.swift */,
+				BFE2FC1724B5DC3200F583C6 /* MyTabVC3.swift */,
+				BFE2FC1924B5DC3700F583C6 /* MyTabVC4.swift */,
+			);
+			path = TabViewController;
+			sourceTree = "<group>";
+		};
 		BFE838B3249B8A6C0067E6F2 = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +480,7 @@
 			children = (
 				BFE838F6249B8BA90067E6F2 /* UIview+.swift */,
 				BFE83903249B8E150067E6F2 /* String+.swift */,
+				BFE2FC1B24B5EAD100F583C6 /* UIImage+.swift */,
 			);
 			path = "扩展";
 			sourceTree = "<group>";
@@ -513,6 +537,8 @@
 		BFE8390E249C5E870067E6F2 /* 页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FC1224B5DBC400F583C6 /* TabViewController */,
+				BFE2FC1024B5DA8700F583C6 /* MyTabBarController.swift */,
 				BFE838C1249B8A6C0067E6F2 /* ViewController.swift */,
 				BFE2FB1B24A730A900F583C6 /* TestMain.swift */,
 				BFE2FC0B24B5D1C600F583C6 /* 首页 */,
@@ -752,14 +778,19 @@
 				BFE2FB1324A5ECED00F583C6 /* CustomCollectionView.swift in Sources */,
 				BFE2FB7924ADF3BB00F583C6 /* CGEllipseView.swift in Sources */,
 				BFE2FB3724A9A59500F583C6 /* MySafeAreaInsets.swift in Sources */,
+				BFE2FC1124B5DA8700F583C6 /* MyTabBarController.swift in Sources */,
 				BFE8391C249F1DE00067E6F2 /* RefreshView.swift in Sources */,
+				BFE2FC1C24B5EAD100F583C6 /* UIImage+.swift in Sources */,
 				BFE838FF249B8BA90067E6F2 /* Common.swift in Sources */,
 				BFE2FB8424ADF78B00F583C6 /* CGGradient3.swift in Sources */,
+				BFE2FC1A24B5DC3700F583C6 /* MyTabVC4.swift in Sources */,
 				BFE2FB6E24ADE54400F583C6 /* CGArcView.swift in Sources */,
 				BFE2FB7E24ADF6EC00F583C6 /* CGGradientVC.swift in Sources */,
 				BFE2FB7724ADF19700F583C6 /* CGRectView.swift in Sources */,
+				BFE2FC1424B5DC1300F583C6 /* MyTabVC1.swift in Sources */,
 				BFE2FB7524ADF15700F583C6 /* CGGraphicsVC.swift in Sources */,
 				BFE2FB8924AED53200F583C6 /* MyPageViewController.swift in Sources */,
+				BFE2FC1624B5DC2B00F583C6 /* MyTabVC2.swift in Sources */,
 				BFE2FB8024ADF77F00F583C6 /* CGGradient1.swift in Sources */,
 				BFE2FB5924AB761300F583C6 /* DBSHHelper.swift in Sources */,
 				BFE83916249C6CEA0067E6F2 /* NavigationVC.swift in Sources */,
@@ -772,6 +803,7 @@
 				BFE83918249CEB5A0067E6F2 /* Task.swift in Sources */,
 				BFE2FB5A24AB761300F583C6 /* DBSHProtocl.swift in Sources */,
 				BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */,
+				BFE2FC1824B5DC3200F583C6 /* MyTabVC3.swift in Sources */,
 				BFE2FB8C24B42E7900F583C6 /* MyMapController.swift in Sources */,
 				BFE2FB7324ADEDCF00F583C6 /* CGLineVC.swift in Sources */,
 				BFE2FB9524B43C5C00F583C6 /* AnnotateAndMark.swift in Sources */,

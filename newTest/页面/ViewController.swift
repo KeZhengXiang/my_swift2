@@ -41,11 +41,6 @@ class ViewController: UIViewController {
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        
-    }
-    
     //跳转到另一个视图
     @objc func jump(){
         

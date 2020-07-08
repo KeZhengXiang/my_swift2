@@ -27,5 +27,7 @@ target 'newTest' do
   pod 'AMapSearch', '~>7.3.0' #地图SDK搜索功能
   pod 'AMapLocation', '~>2.6.5' #定位SDK
   
+  
+  pod 'AlipaySDK-iOS', '~>15.7.4' #支付宝支付SDK
 
 end

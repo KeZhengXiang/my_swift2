@@ -4,6 +4,7 @@
 //
 //  Created by one on 2020/7/7.
 //  Copyright © 2020 one. All rights reserved.
+//  创建名称：从者云集-学习Demo
 //  使用高德地图sdk
 //  官方： https://lbs.amap.com/api/ios-sdk/summary
 //  高的开发平台控制台： https://console.amap.com/dev/key/app
@@ -23,7 +24,7 @@ import AMapFoundationKit
 import MAMapKit
 
 
-class MyMapController : KViewController {
+class MyMapController : BaseViewController {
     
     //显示目标位置
     let target :CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 30.66341289038206, longitude: 104.06732055002922)

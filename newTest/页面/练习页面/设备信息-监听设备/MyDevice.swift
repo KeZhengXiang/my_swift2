@@ -42,8 +42,7 @@ class MyDevice: UIViewController {
         super.viewDidLoad()
         
         title = "设备信息 监听设备"
-        view.backgroundColor = UIColor.white
-        
+        view.backgroundColor = UIColor.systemYellow
         view.addSubview(scrollView)
         
         let content = scrollView

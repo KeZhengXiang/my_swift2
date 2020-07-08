@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - AlipaySDK-iOS (15.7.4)
   - AMap3DMap (7.5.0):
     - AMapFoundation (~> 1.6.3)
   - AMapFoundation (1.6.3)
@@ -18,6 +19,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlipaySDK-iOS
   - AMap3DMap (~> 7.5.0)
   - AMapLocation (~> 2.6.5)
   - AMapSearch (~> 7.3.0)
@@ -31,6 +33,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlipaySDK-iOS
     - AMap3DMap
     - AMapFoundation
     - AMapLocation
@@ -44,6 +47,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlipaySDK-iOS: 8659cdb4403de7e5f26ad8b699864a9cbe53384c
   AMap3DMap: fc7c911f5cf079d544ad7faec256c9554cbbb202
   AMapFoundation: 9ed923193b357ebb30a073e9fe255d3c24054d5a
   AMapLocation: c566d448285cd502c1e313063d9e2460bd4d7100
@@ -55,6 +59,6 @@ SPEC CHECKSUMS:
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 37958bdb72bc2b3259358a65d3f5a7640d9c5f5e
+PODFILE CHECKSUM: 2424ce3e2285f4b46eca087fdbe9899000926a6f
 
 COCOAPODS: 1.9.1

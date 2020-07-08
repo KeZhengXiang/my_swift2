@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KViewController :UIViewController{
+class BaseViewController :UIViewController{
     
     
     

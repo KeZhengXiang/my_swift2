@@ -8,21 +8,49 @@
 
 import UIKit
  
-class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+class MyPageViewController: UIPageViewController {
      
+    //MARK: - 初始化
+    override init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [UIPageViewController.OptionsKey : Any]? = nil) {
+        // .scroll滑动style  .horizontal 水平style
+        super.init(transitionStyle: UIPageViewController.TransitionStyle.scroll, navigationOrientation: UIPageViewController.NavigationOrientation.horizontal, options: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: - life
+    
+    private var selectIndex = 0
+    private var isAnimation = false
+    
     //所有页面的视图控制器
     private(set) lazy var allViewControllers: [UIViewController] = {
         return [MyDevice(),MyAnimation(),MyCollectionView()]
     }()
-     
+    
+    private(set) lazy var btnMove: UIButton = {
+        let btn = UIButton(frame: CGRect(x: 100, y: 200, width: 120, height: 40))
+        btn.center = self.view.center
+        btn.backgroundColor = UIColor.systemBlue
+        btn.setTitle("动画切换", for: .normal)
+        return btn
+    }()
+    
     //页面加载完毕
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(btnMove)
+        btnMove.addTarget(self, action: #selector(changePageForAnimation(btn:)), for: .touchUpInside)
+        
          
         //数据源设置
         dataSource = self
         delegate = self
          
+        selectIndex = 0
         //设置首页
         if let firstViewController = allViewControllers.first {
             setViewControllers([firstViewController],
@@ -30,8 +58,31 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
                                animated: true,
                                completion: nil)
         }
+        
+        
     }
     
+    
+    ///
+    @objc func changePageForAnimation(btn :UIButton){
+        guard !self.isAnimation else{
+            return
+        }
+        isAnimation = true
+        selectIndex += 1
+        selectIndex = (selectIndex >= allViewControllers.count) ? 0 : selectIndex
+        self.setViewControllers([allViewControllers[selectIndex]], direction: UIPageViewController.NavigationDirection.forward, animated: true) {[weak self] (bl) in
+            guard self != nil else{
+                return
+            }
+            self!.isAnimation = false
+        }
+    }
+    
+    
+    
+}
+extension MyPageViewController : UIPageViewControllerDataSource {
     //获取前一个页面
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore
@@ -41,7 +92,8 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
         }
          
         let previousIndex = viewControllerIndex - 1
-         
+        selectIndex = previousIndex
+        print("----go selectIndex = \(selectIndex)")
         guard previousIndex >= 0 else {
             return nil
         }
@@ -62,6 +114,8 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
         }
          
         let nextIndex = viewControllerIndex + 1
+        selectIndex = nextIndex
+        print("----go selectIndex = \(selectIndex)")
         let orderedViewControllersCount = allViewControllers.count
          
         guard orderedViewControllersCount != nextIndex else {
@@ -74,7 +128,6 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
          
         return allViewControllers[nextIndex]
     }
-    
 }
 
 

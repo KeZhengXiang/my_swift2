@@ -92,14 +92,12 @@ class MyTabBarController : UITabBarController {
     
     //跳转到另一个视图
         @objc func jump(){
-            setViewControllers(self.viewControllers, animated: true)
-//
-//            print("点击按钮，开始跳转！")
-//            let anotherVC = TestMain()
-//            //1
-//    //        present(anotherVC, animated: true, completion: nil)
-//            //2
-//            self.navigationController?.pushViewController(anotherVC, animated: true)
+            print("点击按钮，开始跳转！")
+            let anotherVC = TestMain()
+            //1
+    //        present(anotherVC, animated: true, completion: nil)
+            //2
+            self.navigationController?.pushViewController(anotherVC, animated: true)
         }
 }
 

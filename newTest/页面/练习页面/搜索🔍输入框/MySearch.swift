@@ -262,13 +262,13 @@ class SearchTableViewCell : UITableViewCell {
     }()
     
     lazy var imagev :UIImageView = {
-        let img = UIImageView(image: UIImage(named: "history_icon"))
+        let img = UIImageView(image: UIImage(named: "icHistory24x24"))
         return img
     }()
     
     lazy var btn :UIButton = {
         let _btn = UIButton()
-        _btn.setImage(UIImage(named: "shanchu"), for: UIControl.State.normal)
+        _btn.setImage(UIImage(named: "icHistoryBlackclose30Small12x12"), for: UIControl.State.normal)
         _btn.addTarget(self, action: #selector(click), for: UIControl.Event.touchUpInside)
         return _btn
     }()

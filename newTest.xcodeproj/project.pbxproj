@@ -42,10 +42,10 @@
 		BFE2FB8C24B42E7900F583C6 /* MyMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB8B24B42E7900F583C6 /* MyMapController.swift */; };
 		BFE2FB9224B435F300F583C6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9124B435F300F583C6 /* BaseViewController.swift */; };
 		BFE2FB9524B43C5C00F583C6 /* AnnotateAndMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9424B43C5C00F583C6 /* AnnotateAndMark.swift */; };
-		BFE2FB9924B44A8500F583C6 /* KFastButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9824B44A8500F583C6 /* KFastButton.swift */; };
 		BFE2FB9C24B48C6500F583C6 /* WXApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9B24B48C6500F583C6 /* WXApiManager.swift */; };
 		BFE2FB9E24B48E4400F583C6 /* AliPaySDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB9D24B48E4400F583C6 /* AliPaySDK.swift */; };
 		BFE2FBA124B4A6C900F583C6 /* AliPayResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FBA024B4A6C900F583C6 /* AliPayResultStatus.swift */; };
+		BFE2FC0F24B5D67900F583C6 /* KFastButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC0E24B5D67900F583C6 /* KFastButton.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -122,11 +122,11 @@
 		BFE2FB8B24B42E7900F583C6 /* MyMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapController.swift; sourceTree = "<group>"; };
 		BFE2FB9124B435F300F583C6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BFE2FB9424B43C5C00F583C6 /* AnnotateAndMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotateAndMark.swift; sourceTree = "<group>"; };
-		BFE2FB9824B44A8500F583C6 /* KFastButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFastButton.swift; sourceTree = "<group>"; };
 		BFE2FB9B24B48C6500F583C6 /* WXApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WXApiManager.swift; sourceTree = "<group>"; };
 		BFE2FB9D24B48E4400F583C6 /* AliPaySDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliPaySDK.swift; sourceTree = "<group>"; };
 		BFE2FBA024B4A6C900F583C6 /* AliPayResultStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliPayResultStatus.swift; sourceTree = "<group>"; };
-		BFE838BC249B8A6C0067E6F2 /* newTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE2FC0E24B5D67900F583C6 /* KFastButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KFastButton.swift; sourceTree = "<group>"; };
+		BFE838BC249B8A6C0067E6F2 /* 从者云集学习Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "从者云集学习Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFE838C4249B8A6C0067E6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -380,14 +380,6 @@
 			path = "注释+标记";
 			sourceTree = "<group>";
 		};
-		BFE2FB9624B44A3800F583C6 /* fast-快速创建 */ = {
-			isa = PBXGroup;
-			children = (
-				BFE2FB9824B44A8500F583C6 /* KFastButton.swift */,
-			);
-			path = "fast-快速创建";
-			sourceTree = "<group>";
-		};
 		BFE2FB9A24B48C5800F583C6 /* 支付(暂定) */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +398,21 @@
 			path = AliPay;
 			sourceTree = "<group>";
 		};
+		BFE2FC0B24B5D1C600F583C6 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		BFE2FC0D24B5D67900F583C6 /* fast-快速创建 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FC0E24B5D67900F583C6 /* KFastButton.swift */,
+			);
+			path = "fast-快速创建";
+			sourceTree = "<group>";
+		};
 		BFE838B3249B8A6C0067E6F2 = {
 			isa = PBXGroup;
 			children = (
@@ -420,7 +427,7 @@
 		BFE838BD249B8A6C0067E6F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFE838BC249B8A6C0067E6F2 /* newTest.app */,
+				BFE838BC249B8A6C0067E6F2 /* 从者云集学习Demo.app */,
 				BFE838D0249B8A6E0067E6F2 /* newTestTests.xctest */,
 				BFE838DB249B8A6E0067E6F2 /* newTestUITests.xctest */,
 			);
@@ -432,7 +439,6 @@
 			children = (
 				BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */,
 				BFE2FB9024B435F300F583C6 /* Base */,
-				BFE2FB9624B44A3800F583C6 /* fast-快速创建 */,
 				BFE8390E249C5E870067E6F2 /* 页面 */,
 				BFE838F8249B8BA90067E6F2 /* 工具 */,
 				BFE838F5249B8BA90067E6F2 /* 扩展 */,
@@ -466,6 +472,7 @@
 		BFE838F8249B8BA90067E6F2 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2FC0D24B5D67900F583C6 /* fast-快速创建 */,
 				BFE2FB4524A9E3FD00F583C6 /* 沙盒路径 */,
 				BFE838F9249B8BA90067E6F2 /* Common.swift */,
 			);
@@ -508,6 +515,7 @@
 			children = (
 				BFE838C1249B8A6C0067E6F2 /* ViewController.swift */,
 				BFE2FB1B24A730A900F583C6 /* TestMain.swift */,
+				BFE2FC0B24B5D1C600F583C6 /* 首页 */,
 				BFE838FA249B8BA90067E6F2 /* 练习页面 */,
 			);
 			path = "页面";
@@ -567,7 +575,7 @@
 			);
 			name = newTest;
 			productName = newTest;
-			productReference = BFE838BC249B8A6C0067E6F2 /* newTest.app */;
+			productReference = BFE838BC249B8A6C0067E6F2 /* 从者云集学习Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BFE838CF249B8A6E0067E6F2 /* newTestTests */ = {
@@ -758,6 +766,7 @@
 				BFE8391E249F1DEF0067E6F2 /* LoadMoreView.swift in Sources */,
 				BFE2FB4224A9B2C400F583C6 /* MyDBVC.swift in Sources */,
 				BFE2FB8224ADF78400F583C6 /* CGGradient2.swift in Sources */,
+				BFE2FC0F24B5D67900F583C6 /* KFastButton.swift in Sources */,
 				BFE83904249B8E150067E6F2 /* String+.swift in Sources */,
 				BFE83901249B8BA90067E6F2 /* MyDevice.swift in Sources */,
 				BFE83918249CEB5A0067E6F2 /* Task.swift in Sources */,
@@ -773,7 +782,6 @@
 				BFE2FB5324AB33CF00F583C6 /* DBSQCode.swift in Sources */,
 				BFE2FB9C24B48C6500F583C6 /* WXApiManager.swift in Sources */,
 				BFE2FB6C24ADD20800F583C6 /* MyCoreGraphics.swift in Sources */,
-				BFE2FB9924B44A8500F583C6 /* KFastButton.swift in Sources */,
 				BFE2FB1724A5F7E400F583C6 /* CustomCVCell.swift in Sources */,
 				BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */,
 				BFE8391A249DF94E0067E6F2 /* MyTableView.swift in Sources */,
@@ -978,7 +986,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myst.newTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "从者云集学习Demo";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -997,7 +1005,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myst.newTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "从者云集学习Demo";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

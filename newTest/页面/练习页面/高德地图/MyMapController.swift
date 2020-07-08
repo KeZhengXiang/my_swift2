@@ -265,7 +265,7 @@ extension MyMapController : MAMapViewDelegate {
             annotationView!.rightCalloutAccessoryView = UIButton(type: UIButton.ButtonType.detailDisclosure)
 
             
-            annotationView!.image = UIImage(named: "navbar_bg_normal")//history_icon
+            annotationView!.image = UIImage(named: "navbar_bg_normal")
             annotationView!.frame.size = CGSize(width: 40, height: 70)
 //            annotationView!.backgroundColor = UIColor.white
 //            let img = UIImage(named: "navbar_bg_normal")

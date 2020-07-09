@@ -33,7 +33,8 @@ class MySafeAreaInsets: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = false
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.navigationBar.isHidden = false
     }
     
     //MARK: - 点击回调
@@ -41,8 +42,12 @@ class MySafeAreaInsets: BaseViewController {
         guard navigationController != nil else {
             return
         }
-        let isHd = !navigationController!.isNavigationBarHidden
-        self.navigationController?.setNavigationBarHidden(isHd, animated: true)
+        //会干掉右滑退出手势
+//        let isHd = !navigationController!.isNavigationBarHidden
+//        self.navigationController?.setNavigationBarHidden(isHd, animated: true)
+        //会保留右滑退出手势
+        let isHd = !navigationController!.navigationBar.isHidden
+        navigationController?.navigationBar.isHidden = isHd
     }
     
     @objc func btn1Up(){

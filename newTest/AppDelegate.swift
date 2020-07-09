@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = UINavigationController(rootViewController: LoadingController())
 //        self.window?.rootViewController = UINavigationController(rootViewController: MyTabBarController())
-        //MyTabBarController
         
         self.window?.makeKeyAndVisible()
         return true
@@ -48,4 +47,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
 

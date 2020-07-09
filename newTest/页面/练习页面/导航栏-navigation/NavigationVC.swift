@@ -13,11 +13,10 @@ class NavigationVC : BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         self.view.backgroundColor = UIColor.white
-        
         self.title = "导航栏"
+        
 //        //自定义标题视图
 //        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 44))
 //        titleLabel.textAlignment = NSTextAlignment.center
@@ -30,9 +29,18 @@ class NavigationVC : BaseViewController {
         
         
         /*----------------UINavigationBar导航栏背景设置------------------*/
-        //隐藏导航栏
-//        self.navigationController?.isNavigationBarHidden = true
+        //MARK: - 控制显示隐藏导航栏
+//        let isHd = false
+//        // 方式一：会干掉右滑退出手势
+//        self.navigationController?.isNavigationBarHidden = isHd
 //
+//        // 方式二：会干掉右滑退出手势，但是可以有动画效果
+//        self.navigationController?.setNavigationBarHidden(isHd, animated: true)
+//
+//        // 方式三：会保留右滑退出手势
+//        self.navigationController?.navigationBar.isHidden = isHd
+        
+        //MARK: - 其他导航栏风格
         //设置导航栏背景风格
 //        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
 //
@@ -58,7 +66,7 @@ class NavigationVC : BaseViewController {
         
         //设置提示文本,通常用不上, 为nil消失
 //        self.navigationItem.prompt = "提示文本";
-        
+        //MARK: - 导航栏自定义两侧按钮
         /*----------------------UINavigationItem两侧按钮----------------*/
         let leftItem1 = UIBarButtonItem(title: "anniu", style: UIBarButtonItem.Style.done, target: self, action: #selector(leftAnniuClick))
 //        self.navigationItem.leftBarButtonItem = leftItem1//第一种方式
@@ -101,6 +109,7 @@ class NavigationVC : BaseViewController {
         navigationController?.isNavigationBarHidden = false
     }
     
+    
     @objc func jump(){
         print("点击")
 //        self.viewWillLayoutSubviews()
@@ -126,3 +135,4 @@ class NavigationVC : BaseViewController {
     }
     
 }
+

@@ -15,8 +15,8 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
     let listNames :Array<String> = [
         "设备信息 监听设备 MyDevice",
         "生命周期 LifeVC",
-        "安全区域-刘海屏 MySafeAreaInsets",
         "导航栏 NavigationVC",
+        "安全区域-刘海屏 MySafeAreaInsets",
         "滑动容器 MyScrollView",
         "列表 MyTableView",
         "网格 MyCollectionView",
@@ -27,14 +27,17 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
         "七种手势 MyGestrue",
         "绘制 MyCoreGraphics",
         "page MyPageViewController",
-        "高德地图sdk MyMapController"]
+        "高德地图sdk MyMapController",
+        "视频 VideoViewController"
+        
+    ]
     
     func getVC(index :Int) -> UIViewController {
         switch index {
         case 0: return MyDevice()
         case 1: return LifeVC()
-        case 2: return MySafeAreaInsets()
-        case 3: return NavigationVC()
+        case 2: return NavigationVC()
+        case 3: return MySafeAreaInsets()
         case 4: return MyScrollView()
         case 5: return MyTableView()
         case 6: return MyCollectionView()
@@ -46,6 +49,7 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
         case 12:return MyCoreGraphics()
         case 13:return MyPageViewController()
         case 14:return MyMapController()
+        case 15:return VideoViewController()
         default:
             return UIViewController()
         }
@@ -55,6 +59,8 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "测试功能页面"
+        
         self.tableview = UITableView.init(frame: self.view.frame, style: .plain)
         
         self.view.addSubview(tableview)

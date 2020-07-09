@@ -54,7 +54,9 @@
 		BFE2FC1C24B5EAD100F583C6 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC1B24B5EAD100F583C6 /* UIImage+.swift */; };
 		BFE2FC2124B5FC2200F583C6 /* LoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2024B5FC2200F583C6 /* LoadingController.swift */; };
 		BFE2FC2324B623BD00F583C6 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2224B623BC00F583C6 /* BannerView.swift */; };
-		BFE2FC2624B6D9DC00F583C6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2524B6D9DB00F583C6 /* VideoViewController.swift */; };
+		BFE2FC2A24B6F35600F583C6 /* MyIjkplayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2924B6F35600F583C6 /* MyIjkplayerVC.swift */; };
+		BFE2FC2C24B6FA3000F583C6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2B24B6FA2F00F583C6 /* VideoViewController.swift */; };
+		BFE2FC2E24B727BC00F583C6 /* KnowledgePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2D24B727BC00F583C6 /* KnowledgePoint.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -143,7 +145,9 @@
 		BFE2FC1B24B5EAD100F583C6 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		BFE2FC2024B5FC2200F583C6 /* LoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingController.swift; sourceTree = "<group>"; };
 		BFE2FC2224B623BC00F583C6 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
-		BFE2FC2524B6D9DB00F583C6 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		BFE2FC2924B6F35600F583C6 /* MyIjkplayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIjkplayerVC.swift; sourceTree = "<group>"; };
+		BFE2FC2B24B6FA2F00F583C6 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		BFE2FC2D24B727BC00F583C6 /* KnowledgePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgePoint.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* 从者云集学习Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "从者云集学习Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -447,14 +451,24 @@
 		BFE2FC2424B6D9B700F583C6 /* 视频 */ = {
 			isa = PBXGroup;
 			children = (
-				BFE2FC2524B6D9DB00F583C6 /* VideoViewController.swift */,
+				BFE2FC2B24B6FA2F00F583C6 /* VideoViewController.swift */,
+				BFE2FC2824B6F2E900F583C6 /* ijkplayer(暂定) */,
 			);
 			path = "视频";
+			sourceTree = "<group>";
+		};
+		BFE2FC2824B6F2E900F583C6 /* ijkplayer(暂定) */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FC2924B6F35600F583C6 /* MyIjkplayerVC.swift */,
+			);
+			path = "ijkplayer(暂定)";
 			sourceTree = "<group>";
 		};
 		BFE838B3249B8A6C0067E6F2 = {
 			isa = PBXGroup;
 			children = (
+				BFE2FC2D24B727BC00F583C6 /* KnowledgePoint.swift */,
 				BFE83917249CEB5A0067E6F2 /* Task.swift */,
 				BFE838BE249B8A6C0067E6F2 /* newTest */,
 				BFE838BD249B8A6C0067E6F2 /* Products */,
@@ -525,8 +539,8 @@
 				BFE2FB9324B43C1700F583C6 /* 注释+标记 */,
 				BFE83914249C6AEA0067E6F2 /* 设备信息-监听设备 */,
 				BFE83910249C67720067E6F2 /* 生命周期 */,
-				BFE2FB3524A9A59500F583C6 /* 安全区域 */,
 				BFE83913249C6A550067E6F2 /* 导航栏-navigation */,
+				BFE2FB3524A9A59500F583C6 /* 安全区域 */,
 				BFE2FB3824A9A5B300F583C6 /* MyScrollView */,
 				BFE8390F249C66BD0067E6F2 /* UITableView */,
 				BFE2FB0F24A5B43B00F583C6 /* UICollectionView */,
@@ -794,7 +808,7 @@
 			files = (
 				BFE2FB1324A5ECED00F583C6 /* CustomCollectionView.swift in Sources */,
 				BFE2FB7924ADF3BB00F583C6 /* CGEllipseView.swift in Sources */,
-				BFE2FC2624B6D9DC00F583C6 /* VideoViewController.swift in Sources */,
+				BFE2FC2A24B6F35600F583C6 /* MyIjkplayerVC.swift in Sources */,
 				BFE2FB3724A9A59500F583C6 /* MySafeAreaInsets.swift in Sources */,
 				BFE2FC1124B5DA8700F583C6 /* MyTabBarController.swift in Sources */,
 				BFE8391C249F1DE00067E6F2 /* RefreshView.swift in Sources */,
@@ -817,6 +831,7 @@
 				BFE8391E249F1DEF0067E6F2 /* LoadMoreView.swift in Sources */,
 				BFE2FB4224A9B2C400F583C6 /* MyDBVC.swift in Sources */,
 				BFE2FB8224ADF78400F583C6 /* CGGradient2.swift in Sources */,
+				BFE2FC2E24B727BC00F583C6 /* KnowledgePoint.swift in Sources */,
 				BFE2FC0F24B5D67900F583C6 /* KFastButton.swift in Sources */,
 				BFE83904249B8E150067E6F2 /* String+.swift in Sources */,
 				BFE83901249B8BA90067E6F2 /* MyDevice.swift in Sources */,
@@ -830,6 +845,7 @@
 				BFE838FE249B8BA90067E6F2 /* UIview+.swift in Sources */,
 				BFE2FB4724A9F90C00F583C6 /* DBManager.swift in Sources */,
 				BFE2FB4424A9DBAA00F583C6 /* PathManager.swift in Sources */,
+				BFE2FC2C24B6FA3000F583C6 /* VideoViewController.swift in Sources */,
 				BFE2FB9E24B48E4400F583C6 /* AliPaySDK.swift in Sources */,
 				BFE2FB5324AB33CF00F583C6 /* DBSQCode.swift in Sources */,
 				BFE2FB9C24B48C6500F583C6 /* WXApiManager.swift in Sources */,

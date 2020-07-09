@@ -1073,22 +1073,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2DAD421E-4536-40CB-9789-E22E6EC52063"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "VideoViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B29ACC66-0732-4C25-A5B3-3460C0D51464"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1096,10 +1080,250 @@
             filePath = "newTest/Base/BaseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "gestureRecognizerShouldBegin(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90223BC7-45A9-46E2-A8D0-8D503A2216EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/Base/BaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DCA2FDD-BE99-407D-93B6-D5744B01D48D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/&#x4e2a;&#x4eba;&#x4e3b;&#x9875;/OtherPersonalVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10BD401B-9C82-429B-81E0-EA92DB4E866A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A4ED407-1FDA-4B56-883C-8AD1CD77E6D8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "handle(gestrue:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D11B805-2BB4-4587-A3BB-58AE06E97FB9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "addOtherVC()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F581DCE0-D6BC-4BFD-BC9D-C919473B353E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "addOtherVC()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7B86838-28E1-41CF-ACC1-B0B4C237624E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "handle(gestrue:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B7B86838-28E1-41CF-ACC1-B0B4C237624E - ab55144147c7fe0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo.VideoViewController.handleScreenEdgePan(screenEdgePan: __C.UIScreenEdgePanGestureRecognizer) -&gt; ()"
+                  moduleName = "&#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/one/newTest/newTest/%E9%A1%B5%E9%9D%A2/%E8%A7%86%E9%A2%91/VideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "1548">
+               </Location>
+               <Location
+                  uuid = "B7B86838-28E1-41CF-ACC1-B0B4C237624E - 16159c7715a5b143"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in &#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo.VideoViewController.handleScreenEdgePan(screenEdgePan: __C.UIScreenEdgePanGestureRecognizer) -&gt; ()"
+                  moduleName = "&#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/one/newTest/newTest/%E9%A1%B5%E9%9D%A2/%E8%A7%86%E9%A2%91/VideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C100B82-A18B-42B3-8E00-5864A1988027"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "handle(gestrue:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F2A7FE1-7C8F-450D-88DA-D7B890FD2BEA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "handle(gestrue:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B43C094D-EFA9-4D6F-A87C-9C5B736246D8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "handle(gestrue:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A3941E1-36FD-455C-A477-1409BCAC8FE8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "newTest/&#x9875;&#x9762;/&#x89c6;&#x9891;/VideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "VideoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8A3941E1-36FD-455C-A477-1409BCAC8FE8 - ec4513f2ac0bc261"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo.VideoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; &#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo.VideoViewController"
+                  moduleName = "&#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/one/newTest/newTest/%E9%A1%B5%E9%9D%A2/%E8%A7%86%E9%A2%91/VideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "8A3941E1-36FD-455C-A477-1409BCAC8FE8 - a21ecdbadbf41e7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo.VideoViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;&#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo.VideoViewController&gt;"
+                  moduleName = "&#x4ece;&#x8005;&#x4e91;&#x96c6;&#x5b66;&#x4e60;Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/one/newTest/newTest/%E9%A1%B5%E9%9D%A2/%E8%A7%86%E9%A2%91/VideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

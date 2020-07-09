@@ -14,7 +14,7 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
 //    var lists :Array<UIViewController> = []
     let listNames :Array<String> = [
         "设备信息 监听设备 MyDevice",
-        "生命周期 LifeVC",
+        "生命周期+WKWebView  LifeVC",
         "导航栏 NavigationVC",
         "安全区域-刘海屏 MySafeAreaInsets",
         "滑动容器 MyScrollView",

@@ -25,7 +25,7 @@ class MyGestrue : BaseViewController {
         let imgv = UIImageView(image: UIImage(named: "navbar_bg_normal"))
 //        imgv.frame.size = CGSize(width: 1080 / 4, height: 1920/4)
         imgv.frame.size = CGSize(width: kScreenW, height: kScreenH - kNavigationBarHeight)
-        imgv.center = CGPoint(x: self.view.center.x, y: self.view.center.y + kNavigationBarHeight/2)
+        imgv.center = CGPoint(x: self.view.center.x, y: self.view.center.y - kNavigationBarHeight/2)
 /*
  scaleToFill,       //缩放图片填充满UIImageView
  scaleAspectFit,    //按图片的宽高比缩放，在UIImageView中显示图片整体，多余区域为透明空白, 图片不会变形

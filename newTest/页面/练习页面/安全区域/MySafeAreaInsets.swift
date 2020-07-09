@@ -41,7 +41,8 @@ class MySafeAreaInsets: BaseViewController {
         guard navigationController != nil else {
             return
         }
-        navigationController!.isNavigationBarHidden = !navigationController!.isNavigationBarHidden
+        let isHd = !navigationController!.isNavigationBarHidden
+        self.navigationController?.setNavigationBarHidden(isHd, animated: true)
     }
     
     @objc func btn1Up(){

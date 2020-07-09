@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class CustomCollectionView: UIViewController {
+class CustomCollectionView: BaseViewController {
     
     
     var collectionView : UICollectionView!
@@ -43,6 +43,11 @@ class CustomCollectionView: UIViewController {
         collectionView.register(CustomCVCell.self, forCellWithReuseIdentifier: "CustomCVCell")
         self.view.addSubview(collectionView)
     
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
 }
 

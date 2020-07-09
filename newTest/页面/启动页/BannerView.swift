@@ -85,17 +85,17 @@ class BannerView: UIView, UIScrollViewDelegate{
         addSubview(scrollView)
          
         first_image.frame = CGRect(x:0,y:0,width:width,height:height)
-        first_image.contentMode = .scaleAspectFill
+        first_image.contentMode = .scaleToFill
         first_image.isUserInteractionEnabled = true
         scrollView.addSubview(first_image)
          
         center_image.frame = CGRect(x:width,y:0,width:width,height:height)
-        center_image.contentMode = .scaleAspectFill
+        center_image.contentMode = .scaleToFill
         center_image.isUserInteractionEnabled = true
         scrollView.addSubview(center_image)
          
         second_image.frame = CGRect(x:width * 2.0,y:0,width:width,height:height)
-        second_image.contentMode = .scaleAspectFill
+        second_image.contentMode = .scaleToFill
         second_image.isUserInteractionEnabled = true
         scrollView.addSubview(second_image)
         
@@ -111,7 +111,7 @@ class BannerView: UIView, UIScrollViewDelegate{
 //        addTapGesWithImage(image: center_image)
         tap_center_image = UITapGestureRecognizer(target: self, action: #selector(tap(_:)))
         center_image.isUserInteractionEnabled = true //让控件可以触发交互事件
-        center_image.contentMode = .scaleAspectFill
+        center_image.contentMode = .scaleToFill
         center_image.clipsToBounds = true //超出父控件的部分不显示
         center_image.addGestureRecognizer(tap_center_image)
         if(isAuto){

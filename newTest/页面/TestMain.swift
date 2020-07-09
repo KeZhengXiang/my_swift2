@@ -64,14 +64,9 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
         self.tableview.dataSource = self;
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = false
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        navigationController?.isNavigationBarHidden = true
     }
     
     // MARK:- UITableViewDataSource
@@ -102,7 +97,12 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
         print("didSelectRowAt \(indexPath)")
         
         let anotherVC = getVC(index:Int(indexPath.row))
-        self.navigationController?.pushViewController(anotherVC, animated: true)
+        if(indexPath.row == 9){
+            self.navigationController?.pushViewController(anotherVC, animated: false)
+        }else{
+            self.navigationController?.pushViewController(anotherVC, animated: true)
+        }
+        
     }
     
 }

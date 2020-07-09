@@ -81,6 +81,11 @@ class MyMapController : BaseViewController {
         createControllerUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     // MARK: - 方法
     ///请求定位弹窗
     func requsetLoction(){

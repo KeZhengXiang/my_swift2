@@ -12,8 +12,6 @@ import WebKit
 
 class LifeVC: BaseViewController {
     
-    
-    
     //视图初始化
     override func loadView() {
         super.loadView()
@@ -44,6 +42,8 @@ class LifeVC: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("viewWillAppear")
+        
+        navigationController?.isNavigationBarHidden = false
     }
     
     //即将布局
@@ -61,7 +61,7 @@ class LifeVC: BaseViewController {
     //视图显示完成后执行
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?.isNavigationBarHidden = false
+        
         print("viewDidAppear")
     }
     

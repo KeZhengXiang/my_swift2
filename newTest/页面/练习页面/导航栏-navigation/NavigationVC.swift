@@ -9,7 +9,7 @@
 
 import UIKit
 
-class NavigationVC : UIViewController {
+class NavigationVC : BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +96,11 @@ class NavigationVC : UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     @objc func jump(){
         print("点击")
 //        self.viewWillLayoutSubviews()
@@ -104,27 +109,20 @@ class NavigationVC : UIViewController {
     
     
     @objc func titleViewBtnClick(btn: UIButton) {
-        
         print("标题被点击了")
         
     }
     @objc func leftAnniuClick() {
-        
         print("anniu被点击了")
         
     }
     @objc func btnClick(btn: UIButton) {
-        
         print("btnClick")
         
     }
     @objc func rightBtnClick() {
-        
         print("rightBtnClick")
         self.navigationController?.popViewController(animated: true)
     }
-    
-    
-    
     
 }

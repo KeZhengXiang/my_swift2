@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class MyDevice: UIViewController {
+class MyDevice: BaseViewController {
     
     var scrollView :UIScrollView = {return UIScrollView(frame: CGRect(x: 0, y: kNavigationBarHeight, width: kScreenW, height: kScreenH - kNavigationBarHeight))}()
     
@@ -120,6 +120,8 @@ class MyDevice: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        navigationController?.isNavigationBarHidden = false
         
         // 监听设备方向变化UIDeviceOrientationDidChange
         NotificationCenter.default.addObserver(self, selector: #selector(change), name: UIDevice.orientationDidChangeNotification, object: nil)

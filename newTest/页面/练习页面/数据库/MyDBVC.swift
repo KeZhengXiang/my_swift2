@@ -14,7 +14,7 @@ import SQLite
 //https://www.jianshu.com/p/61b3bdc873b0    封装试例
 
 
-class MyDBVC :UIViewController {
+class MyDBVC :BaseViewController {
     let _item = DBHistorysModel(name: "道长生", historys: ["你好","123","abc"], icon: UIImage(named: "backImage0")!)
     
     var _h :CGFloat = 150
@@ -112,6 +112,8 @@ class MyDBVC :UIViewController {
         }catch _{
         }
     }
+    
+    //MARK: - life
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -136,9 +138,10 @@ class MyDBVC :UIViewController {
         self.view.addSubview(imageV)
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
     
 //

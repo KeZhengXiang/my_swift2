@@ -14,7 +14,7 @@ import MJRefresh
 
 //https://developer.apple.com/documentation/uikit/uiscrollview
 //https://developer.apple.com/documentation/uikit/uiscrollviewdelegate
-class MyScrollView : UIViewController {
+class MyScrollView : BaseViewController {
     
     var model :ModelTest?
     var scrollView :UIScrollView!
@@ -27,6 +27,11 @@ class MyScrollView : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createrUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
     
     

@@ -10,7 +10,7 @@
 import UIKit
 import SnapKit
 
-class MyCollectionView: UIViewController {
+class MyCollectionView: BaseViewController {
     
     var cellw = kScreenW/2 //依据间距调整，当前是0间距
     var cellh = CGFloat(135.0)
@@ -49,6 +49,12 @@ class MyCollectionView: UIViewController {
         self.view.addSubview(collectionView)
     
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
 }
 
 extension MyCollectionView : UICollectionViewDataSource{

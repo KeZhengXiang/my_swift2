@@ -13,7 +13,7 @@ import Kingfisher
 import MJRefresh
 
 
-class MyTableView : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MyTableView : BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     var model :ModelTest?
     var tableview :UITableView!
@@ -28,9 +28,12 @@ class MyTableView : UIViewController, UITableViewDelegate, UITableViewDataSource
         self.createrUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
     
     func createrUI() -> Void {
-        
         self.tableview = UITableView.init(frame: self.view.frame, style: .plain)
         
         self.view.addSubview(tableview)

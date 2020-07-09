@@ -11,7 +11,8 @@ import SnapKit
 //https://developer.apple.com/documentation/uikit/uisearchbar
 //https://developer.apple.com/documentation/uikit/uisearchbardelegate
 //UISearchBar的使用一:把UISearchBar上英文Cancel变成中文 https://www.jianshu.com/p/80a848b78957
-class MySearch: UIViewController {
+
+class MySearch: BaseViewController {
     //需要存储本地   （后续添加）
     //显示限制条数
     let count = 2
@@ -95,12 +96,6 @@ class MySearch: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        self.navigationController?.isNavigationBarHidden = false
     }
     
     override func viewDidDisappear (_ animated: Bool) {

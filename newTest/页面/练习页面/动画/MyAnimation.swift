@@ -13,7 +13,7 @@ import SnapKit
 
 
 
-class  MyAnimation: UIViewController {
+class  MyAnimation: BaseViewController {
     
     let initPos :CGRect = CGRect(x: 100, y: 100, width: 100, height: 100)
     
@@ -133,6 +133,11 @@ class  MyAnimation: UIViewController {
         self.view.addSubview(btn7)
         print("self.view1.center = \(self.view1.center)")
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -10,7 +10,7 @@
 import UIKit
 
  
-class CGGraphicsVC: UIViewController {
+class CGGraphicsVC: BaseViewController {
     var _h :CGFloat = kNavigationBarHeight + 10//迭代高
     var _s :CGFloat = 30//上下间隔
     //矩形
@@ -84,7 +84,8 @@ class CGGraphicsVC: UIViewController {
         self.view.addSubview(fzV)
     }
      
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
 }

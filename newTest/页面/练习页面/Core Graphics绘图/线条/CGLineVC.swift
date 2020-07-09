@@ -9,7 +9,7 @@
 import UIKit
 
  
-class CGLineVC: UIViewController {
+class CGLineVC: BaseViewController {
     var _h :CGFloat = kNavigationBarHeight + 10//迭代高
     var _s :CGFloat = 30//上下间隔
     //线段
@@ -83,7 +83,8 @@ class CGLineVC: UIViewController {
         self.view.addSubview(quadCurveV)
     }
      
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
 }

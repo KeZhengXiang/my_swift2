@@ -9,7 +9,7 @@
 import UIKit
 
  
-class CGGradientVC: UIViewController {
+class CGGradientVC: BaseViewController {
     var _h :CGFloat = kNavigationBarHeight + 10//迭代高
     var _s :CGFloat = 30//上下间隔
     //
@@ -100,8 +100,9 @@ class CGGradientVC: UIViewController {
         self.view.addSubview(label4)
         self.view.addSubview(gradV4)
     }
-     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
 }

@@ -11,61 +11,127 @@ import UIKit
 
 class MySafeAreaInsets: BaseViewController {
     
-    //视图初始化
-    override func loadView() {
-        super.loadView()
-        print("loadView")
-    }
-    
-    //视图加载完成
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad")
         
         self.title = "安全区域展示"
         self.view.backgroundColor = kRGB(255, 255, 255)
         
-        //创建top安全区域
-        let topView:UIView = UIView()
-        topView.backgroundColor = kRGB(255, 0, 0)
-        topView.frame = CGRect(x: 0, y: 0, width: kScreenW, height: kSafeAreaInsets?.top ?? 0)
-        self.view.addSubview(topView);
+        self.navigationController?.navigationBar.isTranslucent = true//半透明
         
-        //创建底部安全区域
-        let bottomView:UIView = UIView()
-        bottomView.backgroundColor = kRGB(255, 0, 0)
-        bottomView.frame = CGRect(x: 0, y: kScreenH - (kSafeAreaInsets?.bottom ?? 0), width: kScreenW, height: kSafeAreaInsets?.bottom ?? 0)
-        self.view.addSubview(bottomView);
+        self.view.addSubview(statusView)
+        self.view.addSubview(bottomView)
+        self.view.addSubview(navView)
+        
+        self.view.addSubview(btn)
+        self.view.addSubview(btn1)
+        self.view.addSubview(btn2)
+        self.view.addSubview(btn3)
+        
+        btn2Up()
     }
     
-    //视图将要出现的时候执行
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("viewWillAppear")
-    }
-    
-    //视图显示完成后执行
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         navigationController?.isNavigationBarHidden = false
-        print("viewDidAppear")
     }
     
-    //视图将要消失的时候执行
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("viewWillDisappear")
+    //MARK: - 点击回调
+    @objc func btnUp(){
+        guard navigationController != nil else {
+            return
+        }
+        navigationController!.isNavigationBarHidden = !navigationController!.isNavigationBarHidden
     }
     
-    //视图已经消失的时候执行
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("viewDidDisappear")
+    @objc func btn1Up(){
+        statusView.isHidden = false
+        bottomView.isHidden = true
+        navView.isHidden = true
     }
     
-    //收到内存警告时执行
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    @objc func btn2Up(){
+        statusView.isHidden = true
+        bottomView.isHidden = false
+        navView.isHidden = true
     }
+    
+    @objc func btn3Up(){
+        statusView.isHidden = true
+        bottomView.isHidden = true
+        navView.isHidden = false
+    }
+    
+    //MARK: - lazy
+    // 显隐导航条     顶部状态栏（默认）   底部安全区（默认）   导航条栏
+    
+    lazy var statusView:UIView = {
+        let v:UIView = UIView()
+        v.backgroundColor = kRGB(255, 0, 0)
+        v.frame = CGRect(x: 0, y: 0, width: kScreenW, height: kStatusBarHeight)
+        return v
+    }()
+    
+    lazy var bottomView:UIView = {
+        let v:UIView = UIView()
+        v.backgroundColor = kRGB(255, 0, 0)
+        v.frame = CGRect(x: 0, y: kScreenH - kBottomSafeHeight, width: kScreenW, height: kBottomSafeHeight)
+        return v
+    }()
+    
+    lazy var navView:UIView = {
+        let v:UIView = UIView()
+        v.backgroundColor = kRGB(255, 0, 0)
+        v.frame = CGRect(x: 0, y: 0, width: kScreenW, height: kNavigationBarHeight)
+        return v
+    }()
+    
+    var _w:CGFloat = 150
+    var _h:CGFloat = 30
+    var _y:CGFloat = 150
+    lazy var btn :UIButton = {
+        //创建返回按钮
+        let button:UIButton = UIButton(type: .system)
+        button.frame = CGRect(x: kScreenW - _w, y: _y, width: _w, height: _h)
+        _y+=_h+10
+        button.setTitle("显隐导航条", for: .normal)
+        button.setTitleColor(UIColor.blue, for: .normal)
+        button.backgroundColor = UIColor.white
+        button.addTarget(self,action:#selector(btnUp),for:.touchUpInside)
+        return button
+    }()
+    lazy var btn1 :UIButton = {
+        //创建返回按钮
+        let button:UIButton = UIButton(type: .system)
+        button.frame = CGRect(x: kScreenW - _w, y: _y, width: _w, height: _h)
+        _y+=_h+10
+        button.setTitle("顶部状态栏", for: .normal)
+        button.setTitleColor(UIColor.blue, for: .normal)
+        button.backgroundColor = UIColor.white
+        button.addTarget(self,action:#selector(btn1Up),for:.touchUpInside)
+        return button
+    }()
+    lazy var btn2 :UIButton = {
+        //创建返回按钮
+        let button:UIButton = UIButton(type: .system)
+        button.frame = CGRect(x: kScreenW - _w, y: _y, width: _w, height: _h)
+        _y+=_h+10
+        button.setTitle("底部安全区", for: .normal)
+        button.setTitleColor(UIColor.blue, for: .normal)
+        button.backgroundColor = UIColor.white
+        button.addTarget(self,action:#selector(btn2Up),for:.touchUpInside)
+        return button
+    }()
+    lazy var btn3 :UIButton = {
+        //创建返回按钮
+        let button:UIButton = UIButton(type: .system)
+        button.frame = CGRect(x: kScreenW - _w, y: _y, width: _w, height: _h)
+        _y+=_h+10
+        button.setTitle("导航条栏", for: .normal)
+        button.setTitleColor(UIColor.blue, for: .normal)
+        button.backgroundColor = UIColor.white
+        button.addTarget(self,action:#selector(btn3Up),for:.touchUpInside)
+        return button
+    }()
     
 }

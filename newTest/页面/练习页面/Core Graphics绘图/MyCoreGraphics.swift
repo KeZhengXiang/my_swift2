@@ -9,7 +9,7 @@
 
 import UIKit
  
-class MyCoreGraphics: UIViewController {
+class MyCoreGraphics: BaseViewController {
     var _h :CGFloat = kNavigationBarHeight + 200//迭代高
     var _s :CGFloat = 30//上下间隔
     
@@ -72,6 +72,11 @@ class MyCoreGraphics: UIViewController {
         btn3.setTitle("绘·渐变", for: UIControl.State.normal)
         btn3.addTarget(self, action: #selector(goGardient), for: UIControl.Event.touchUpInside)
         self.view.addSubview(btn3)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
      
     

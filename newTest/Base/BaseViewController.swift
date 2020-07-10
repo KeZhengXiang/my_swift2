@@ -42,6 +42,12 @@ class BaseViewController :UIViewController{
         super.viewWillDisappear(animated)
         
 //        print("@@即将离开页面：\(self.classForCoder)")
+        
+        if(isNavSpecialHidden){
+            navigationController?.setNavigationBarHidden(true, animated: false)
+            navigationController?.setNavigationBarHidden(false, animated: false)
+            navigationController?.navigationBar.isHidden = false
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {

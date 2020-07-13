@@ -55,6 +55,10 @@ class BaseViewController :UIViewController{
         
         print("@@离开页面：\(self.classForCoder)")
     }
+    
+    deinit {
+        print("@@销毁页面：\(self.classForCoder)")
+    }
 }
 
 

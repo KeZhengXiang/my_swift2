@@ -14,9 +14,10 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
 //    var lists :Array<UIViewController> = []
     let listNames :Array<String> = [
         "设备信息 监听设备 MyDevice",
-        "生命周期+WKWebView  LifeVC",
+        "生命周期 LifeVC",
         "导航栏 NavigationVC",
         "安全区域-刘海屏 MySafeAreaInsets",
+        "嵌入网页 WebView",
         "滑动容器 MyScrollView",
         "列表 MyTableView",
         "网格 MyCollectionView",
@@ -28,28 +29,34 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
         "绘制 MyCoreGraphics",
         "page MyPageViewController",
         "高德地图sdk MyMapController",
-        "视频 VideoViewController"
+        "滑动页面触发导航至另一页面（左滑跳转）",
+        "视频基础 VideoViewController",
+        "视频列表 videoTableVC"
         
     ]
     
     func getVC(index :Int) -> UIViewController {
         switch index {
-        case 0: return MyDevice()
-        case 1: return LifeVC()
-        case 2: return NavigationVC()
-        case 3: return MySafeAreaInsets()
-        case 4: return MyScrollView()
-        case 5: return MyTableView()
-        case 6: return MyCollectionView()
-        case 7: return CustomCollectionView()
-        case 8: return MyAnimation()
-        case 9: return MySearch()
-        case 10:return MyDBVC()
-        case 11:return MyGestrue()
-        case 12:return MyCoreGraphics()
-        case 13:return MyPageViewController()
-        case 14:return MyMapController()
-        case 15:return VideoViewController()
+        case 0:return MyDevice()
+        case 1:return LifeVC()
+        case 2:return NavigationVC()
+        case 3:return MySafeAreaInsets()
+        case 4:return MyWebViewVC()
+        case 5:return MyScrollView()
+        case 6:return MyTableView()
+        case 7:return MyCollectionView()
+        case 8:return CustomCollectionView()
+        case 9:return MyAnimation()
+        case 10:return MySearch()
+        case 11:return MyDBVC()
+        case 12:return MyGestrue()
+        case 13:return MyCoreGraphics()
+        case 14:return MyPageViewController()
+        case 15:return MyMapController()
+        case 16:return MyPage1VC()
+        case 17:return VideoViewController()
+        case 18:return videoTableVC()
+        
         default:
             return UIViewController()
         }

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2AADE7B66C4B6B8AB8845500 /* Pods_newTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDCB98AB97C9C46E8905599 /* Pods_newTest.framework */; };
+		BFA6DC5024BC3235001546D4 /* MyWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6DC4F24BC3235001546D4 /* MyWebViewVC.swift */; };
+		BFA6DC5224BC34CA001546D4 /* LifeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6DC5124BC34CA001546D4 /* LifeVC.swift */; };
+		BFA6DC5424BC3FEA001546D4 /* videoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6DC5324BC3FEA001546D4 /* videoTableVC.swift */; };
+		BFA6DC5624BC4167001546D4 /* videoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6DC5524BC4167001546D4 /* videoModel.swift */; };
+		BFA6DC5824BC562C001546D4 /* VideoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6DC5724BC562C001546D4 /* VideoTableCell.swift */; };
+		BFA6DC5A24BC5656001546D4 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6DC5924BC5656001546D4 /* VideoView.swift */; };
 		BFE2FB1124A5B51000F583C6 /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1024A5B51000F583C6 /* MyCollectionView.swift */; };
 		BFE2FB1324A5ECED00F583C6 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1224A5ECED00F583C6 /* CustomCollectionView.swift */; };
 		BFE2FB1524A5EDC500F583C6 /* CustomCViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FB1424A5EDC500F583C6 /* CustomCViewFlowLayout.swift */; };
@@ -58,6 +64,8 @@
 		BFE2FC2C24B6FA3000F583C6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2B24B6FA2F00F583C6 /* VideoViewController.swift */; };
 		BFE2FC2E24B727BC00F583C6 /* KnowledgePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC2D24B727BC00F583C6 /* KnowledgePoint.swift */; };
 		BFE2FC3124B72EC300F583C6 /* OtherPersonalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC3024B72EC200F583C6 /* OtherPersonalVC.swift */; };
+		BFE2FC3524B9B2F900F583C6 /* MyPage1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC3424B9B2F700F583C6 /* MyPage1VC.swift */; };
+		BFE2FC3724B9B41400F583C6 /* MyPage2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2FC3624B9B41400F583C6 /* MyPage2VC.swift */; };
 		BFE838C0249B8A6C0067E6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */; };
 		BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE838C1249B8A6C0067E6F2 /* ViewController.swift */; };
 		BFE838C5249B8A6C0067E6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE838C3249B8A6C0067E6F2 /* Main.storyboard */; };
@@ -69,7 +77,6 @@
 		BFE83904249B8E150067E6F2 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83903249B8E150067E6F2 /* String+.swift */; };
 		BFE83906249B8EFF0067E6F2 /* HttpMannager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83905249B8EFF0067E6F2 /* HttpMannager.swift */; };
 		BFE83908249BB0480067E6F2 /* ModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83907249BB0480067E6F2 /* ModelTest.swift */; };
-		BFE83912249C679B0067E6F2 /* LifeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83911249C679B0067E6F2 /* LifeVC.swift */; };
 		BFE83916249C6CEA0067E6F2 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83915249C6CEA0067E6F2 /* NavigationVC.swift */; };
 		BFE83918249CEB5A0067E6F2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83917249CEB5A0067E6F2 /* Task.swift */; };
 		BFE8391A249DF94E0067E6F2 /* MyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83919249DF94E0067E6F2 /* MyTableView.swift */; };
@@ -98,6 +105,12 @@
 		12C6CF12753C05106C688127 /* Pods-newTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newTest.debug.xcconfig"; path = "Target Support Files/Pods-newTest/Pods-newTest.debug.xcconfig"; sourceTree = "<group>"; };
 		5EDCB98AB97C9C46E8905599 /* Pods_newTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		778A65F14A5A419D870C9D44 /* Pods-newTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newTest.release.xcconfig"; path = "Target Support Files/Pods-newTest/Pods-newTest.release.xcconfig"; sourceTree = "<group>"; };
+		BFA6DC4F24BC3235001546D4 /* MyWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebViewVC.swift; sourceTree = "<group>"; };
+		BFA6DC5124BC34CA001546D4 /* LifeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeVC.swift; sourceTree = "<group>"; };
+		BFA6DC5324BC3FEA001546D4 /* videoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTableVC.swift; sourceTree = "<group>"; };
+		BFA6DC5524BC4167001546D4 /* videoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoModel.swift; sourceTree = "<group>"; };
+		BFA6DC5724BC562C001546D4 /* VideoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableCell.swift; sourceTree = "<group>"; };
+		BFA6DC5924BC5656001546D4 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		BFE2FB1024A5B51000F583C6 /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
 		BFE2FB1224A5ECED00F583C6 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		BFE2FB1424A5EDC500F583C6 /* CustomCViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -150,6 +163,8 @@
 		BFE2FC2B24B6FA2F00F583C6 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		BFE2FC2D24B727BC00F583C6 /* KnowledgePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgePoint.swift; sourceTree = "<group>"; };
 		BFE2FC3024B72EC200F583C6 /* OtherPersonalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPersonalVC.swift; sourceTree = "<group>"; };
+		BFE2FC3424B9B2F700F583C6 /* MyPage1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage1VC.swift; sourceTree = "<group>"; };
+		BFE2FC3624B9B41400F583C6 /* MyPage2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage2VC.swift; sourceTree = "<group>"; };
 		BFE838BC249B8A6C0067E6F2 /* 从者云集学习Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "从者云集学习Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE838BF249B8A6C0067E6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE838C1249B8A6C0067E6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +180,6 @@
 		BFE83903249B8E150067E6F2 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		BFE83905249B8EFF0067E6F2 /* HttpMannager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMannager.swift; sourceTree = "<group>"; };
 		BFE83907249BB0480067E6F2 /* ModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTest.swift; sourceTree = "<group>"; };
-		BFE83911249C679B0067E6F2 /* LifeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeVC.swift; sourceTree = "<group>"; };
 		BFE83915249C6CEA0067E6F2 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		BFE83917249CEB5A0067E6F2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BFE83919249DF94E0067E6F2 /* MyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableView.swift; sourceTree = "<group>"; };
@@ -214,6 +228,14 @@
 				778A65F14A5A419D870C9D44 /* Pods-newTest.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFA6DC4E24BC3210001546D4 /* 嵌入网页 WebView */ = {
+			isa = PBXGroup;
+			children = (
+				BFA6DC4F24BC3235001546D4 /* MyWebViewVC.swift */,
+			);
+			path = "嵌入网页 WebView";
 			sourceTree = "<group>";
 		};
 		BFE2FB0E24A5B3A700F583C6 /* 瀑布流 */ = {
@@ -453,8 +475,13 @@
 		BFE2FC2424B6D9B700F583C6 /* 视频 */ = {
 			isa = PBXGroup;
 			children = (
-				BFE2FC2B24B6FA2F00F583C6 /* VideoViewController.swift */,
+				BFA6DC5324BC3FEA001546D4 /* videoTableVC.swift */,
+				BFA6DC5724BC562C001546D4 /* VideoTableCell.swift */,
+				BFA6DC5924BC5656001546D4 /* VideoView.swift */,
+				BFA6DC5524BC4167001546D4 /* videoModel.swift */,
+				BFE2FC3224B9674200F583C6 /* cache */,
 				BFE2FC2824B6F2E900F583C6 /* ijkplayer(暂定) */,
+				BFE2FC2B24B6FA2F00F583C6 /* VideoViewController.swift */,
 				BFE2FC2F24B72E5B00F583C6 /* 个人主页 */,
 			);
 			path = "视频";
@@ -474,6 +501,22 @@
 				BFE2FC3024B72EC200F583C6 /* OtherPersonalVC.swift */,
 			);
 			path = "个人主页";
+			sourceTree = "<group>";
+		};
+		BFE2FC3224B9674200F583C6 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		BFE2FC3324B9B29C00F583C6 /* 滑动页面触发导航至另一页面（左滑跳转） */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2FC3424B9B2F700F583C6 /* MyPage1VC.swift */,
+				BFE2FC3624B9B41400F583C6 /* MyPage2VC.swift */,
+			);
+			path = "滑动页面触发导航至另一页面（左滑跳转）";
 			sourceTree = "<group>";
 		};
 		BFE838B3249B8A6C0067E6F2 = {
@@ -549,9 +592,10 @@
 			children = (
 				BFE2FB9324B43C1700F583C6 /* 注释+标记 */,
 				BFE83914249C6AEA0067E6F2 /* 设备信息-监听设备 */,
-				BFE83910249C67720067E6F2 /* 生命周期+WKWebView */,
+				BFE83910249C67720067E6F2 /* 生命周期 */,
 				BFE83913249C6A550067E6F2 /* 导航栏-navigation */,
 				BFE2FB3524A9A59500F583C6 /* 安全区域 */,
+				BFA6DC4E24BC3210001546D4 /* 嵌入网页 WebView */,
 				BFE2FB3824A9A5B300F583C6 /* MyScrollView */,
 				BFE8390F249C66BD0067E6F2 /* UITableView */,
 				BFE2FB0F24A5B43B00F583C6 /* UICollectionView */,
@@ -563,6 +607,7 @@
 				BFE2FB8724AED4F300F583C6 /* UIPageViewController */,
 				BFE2FB8A24B42E5100F583C6 /* 高德地图 */,
 				BFE2FB9A24B48C5800F583C6 /* 支付(暂定) */,
+				BFE2FC3324B9B29C00F583C6 /* 滑动页面触发导航至另一页面（左滑跳转） */,
 			);
 			path = "练习页面";
 			sourceTree = "<group>";
@@ -599,12 +644,12 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
-		BFE83910249C67720067E6F2 /* 生命周期+WKWebView */ = {
+		BFE83910249C67720067E6F2 /* 生命周期 */ = {
 			isa = PBXGroup;
 			children = (
-				BFE83911249C679B0067E6F2 /* LifeVC.swift */,
+				BFA6DC5124BC34CA001546D4 /* LifeVC.swift */,
 			);
-			path = "生命周期+WKWebView";
+			path = "生命周期";
 			sourceTree = "<group>";
 		};
 		BFE83913249C6A550067E6F2 /* 导航栏-navigation */ = {
@@ -817,6 +862,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA6DC5224BC34CA001546D4 /* LifeVC.swift in Sources */,
 				BFE2FB1324A5ECED00F583C6 /* CustomCollectionView.swift in Sources */,
 				BFE2FB7924ADF3BB00F583C6 /* CGEllipseView.swift in Sources */,
 				BFE2FC2A24B6F35600F583C6 /* MyIjkplayerVC.swift in Sources */,
@@ -837,19 +883,25 @@
 				BFE2FC1624B5DC2B00F583C6 /* MyTabVC2.swift in Sources */,
 				BFE2FB8024ADF77F00F583C6 /* CGGradient1.swift in Sources */,
 				BFE2FB5924AB761300F583C6 /* DBSHHelper.swift in Sources */,
+				BFA6DC5424BC3FEA001546D4 /* videoTableVC.swift in Sources */,
 				BFE83916249C6CEA0067E6F2 /* NavigationVC.swift in Sources */,
 				BFE2FC2124B5FC2200F583C6 /* LoadingController.swift in Sources */,
+				BFE2FC3524B9B2F900F583C6 /* MyPage1VC.swift in Sources */,
 				BFE2FC2324B623BD00F583C6 /* BannerView.swift in Sources */,
 				BFE8391E249F1DEF0067E6F2 /* LoadMoreView.swift in Sources */,
 				BFE2FB4224A9B2C400F583C6 /* MyDBVC.swift in Sources */,
+				BFA6DC5024BC3235001546D4 /* MyWebViewVC.swift in Sources */,
+				BFA6DC5624BC4167001546D4 /* videoModel.swift in Sources */,
 				BFE2FB8224ADF78400F583C6 /* CGGradient2.swift in Sources */,
 				BFE2FC2E24B727BC00F583C6 /* KnowledgePoint.swift in Sources */,
+				BFA6DC5824BC562C001546D4 /* VideoTableCell.swift in Sources */,
 				BFE2FC0F24B5D67900F583C6 /* KFastButton.swift in Sources */,
 				BFE83904249B8E150067E6F2 /* String+.swift in Sources */,
 				BFE83901249B8BA90067E6F2 /* MyDevice.swift in Sources */,
 				BFE83918249CEB5A0067E6F2 /* Task.swift in Sources */,
 				BFE2FB5A24AB761300F583C6 /* DBSHProtocl.swift in Sources */,
 				BFE838C2249B8A6C0067E6F2 /* ViewController.swift in Sources */,
+				BFE2FC3724B9B41400F583C6 /* MyPage2VC.swift in Sources */,
 				BFE2FC1824B5DC3200F583C6 /* MyTabVC3.swift in Sources */,
 				BFE2FB8C24B42E7900F583C6 /* MyMapController.swift in Sources */,
 				BFE2FB7324ADEDCF00F583C6 /* CGLineVC.swift in Sources */,
@@ -860,6 +912,7 @@
 				BFE2FC2C24B6FA3000F583C6 /* VideoViewController.swift in Sources */,
 				BFE2FB9E24B48E4400F583C6 /* AliPaySDK.swift in Sources */,
 				BFE2FB5324AB33CF00F583C6 /* DBSQCode.swift in Sources */,
+				BFA6DC5A24BC5656001546D4 /* VideoView.swift in Sources */,
 				BFE2FB9C24B48C6500F583C6 /* WXApiManager.swift in Sources */,
 				BFE2FB6C24ADD20800F583C6 /* MyCoreGraphics.swift in Sources */,
 				BFE2FB1724A5F7E400F583C6 /* CustomCVCell.swift in Sources */,
@@ -874,7 +927,6 @@
 				BFE2FBA124B4A6C900F583C6 /* AliPayResultStatus.swift in Sources */,
 				BFE83906249B8EFF0067E6F2 /* HttpMannager.swift in Sources */,
 				BFE2FB8624ADF86800F583C6 /* CGGradient4.swift in Sources */,
-				BFE83912249C679B0067E6F2 /* LifeVC.swift in Sources */,
 				BFE2FB5D24AC97ED00F583C6 /* MyGestrue.swift in Sources */,
 				BFE2FB3F24A9A5C500F583C6 /* MySearch.swift in Sources */,
 				BFE2FB1524A5EDC500F583C6 /* CustomCViewFlowLayout.swift in Sources */,

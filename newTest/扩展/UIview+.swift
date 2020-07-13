@@ -1,3 +1,38 @@
+
+//
+//  UIViewExtension.swift
+//  newTest
+//
+//  Created by one on 2020/6/18.
+//  Copyright © 2020 one. All rights reserved.
+//
+
+import UIKit
+
+
+
+extension UIView {
+    
+    //将当前视图转为UIImage
+    func asImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
+    }
+    /**
+     /// 整个窗口截屏
+     let image = UIApplication.shared.keyWindow!.asImage()
+
+     /// 某一个单独View截图
+     let image = self.imageBgView.asImage()
+
+     /// 将转换后的UIImage保存到相机胶卷中
+     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+     */
+}
+
+
 ////
 ////  UIviewExtension.swift
 ////  my_swift2

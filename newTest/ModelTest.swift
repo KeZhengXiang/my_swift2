@@ -5,6 +5,7 @@
 //  Created by one on 2020/6/18.
 //  Copyright © 2020 one. All rights reserved.
 //  测试model
+//https://github.com/alibaba/HandyJSON
 
 import HandyJSON
 

@@ -135,13 +135,23 @@ class MyScrollView : BaseViewController {
         }
     }
     
-    @objc func tapClick(gr :UITapGestureRecognizer){
+    @objc func tapClick(gr :UILabel){
         print(gr)
-        print("self.scrollView.contentSize:  \(self.scrollView.contentSize)")
-        print("self.scrollView.contentInset = \(self.scrollView.contentInset)")
+//        print("self.scrollView.contentSize:  \(self.scrollView.contentSize)")
+//        print("self.scrollView.contentInset = \(self.scrollView.contentInset)")
 //        self.scrollView.contentInset = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 0)
         self.scrollView.mj_footer?.endRefreshing()
     }
+    
+    //MARK:- lazy
+//    lazy var btnJump :UIButton = {
+//        let button = UIButton(type: .system)
+//        button.frame = CGRect(x: 10, y: 150, width: 200, height: 30)
+//        button.center = view.center
+//        button.setTitle("高级应用页面", for: .normal)
+//        button.backgroundColor = UIColor.green
+//        return button
+//    }()
 }
 
 

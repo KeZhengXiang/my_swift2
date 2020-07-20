@@ -11,7 +11,7 @@ import SnapKit
 
 
 class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource {
-//    var lists :Array<UIViewController> = []
+    
     let listNames :Array<String> = [
         "设备信息 监听设备 MyDevice",
         "生命周期 LifeVC",
@@ -31,8 +31,10 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
         "高德地图sdk MyMapController",
         "滑动页面触发导航至另一页面（左滑跳转）",
         "视频基础 VideoViewController",
-        "视频列表 videoTableVC"
-        
+        "视频列表 videoTableVC",
+        "滑动高级页面1 -> ScrollUp1VC ",
+        "分段控制器 MySegmentedControl",
+        "分页菜单的实现 MySegmentAndPageVC"
     ]
     
     func getVC(index :Int) -> UIViewController {
@@ -56,6 +58,9 @@ class TestMain : BaseViewController, UITableViewDelegate, UITableViewDataSource 
         case 16:return MyPage1VC()
         case 17:return VideoViewController()
         case 18:return videoTableVC()
+        case 19:return ScrollUp1VC()
+        case 20:return MySegmentedControl()
+        case 21:return MySegmentAndPageVC()
         
         default:
             return UIViewController()

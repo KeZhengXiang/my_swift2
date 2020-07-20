@@ -25,6 +25,8 @@ class videoTableVC: BaseViewController {
         super.viewDidLoad()
         isNavSpecialHidden = true
         
+        HttpManager.shared.readVideos()
+        
         for _ in 0..<100 {
             models.append(VideoModel())
         }

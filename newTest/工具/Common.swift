@@ -156,4 +156,3 @@ func getRandom(){
 //    //2
 //    self.navigationController?.pushViewController(anotherVC, animated: true)
 //}
-
